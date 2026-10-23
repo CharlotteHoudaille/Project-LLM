@@ -1,0 +1,31 @@
+[project]
+name = "comptines"
+version = "0.1.0"
+description = "Projet IA — un petit GPT qui écrit des comptines anglaises à partir de mots donnés"
+requires-python = ">=3.13"
+dependencies = [
+    "torch>=2.14",
+    "numpy>=2.5",
+    "matplotlib>=3.11",
+    "scikit-learn>=1.9",
+    "tensorboard>=2.21",
+    "ipykernel>=7.3",
+    "jupyterlab>=4.4",
+    "tiktoken>=0.14.0",
+]
+
+[tool.uv]
+package = false
+# Le projet est dans OneDrive, qui ne supporte pas les liens physiques (hardlinks)
+# que uv utilise par défaut : on copie les fichiers depuis le cache.
+link-mode = "copy"
+
+# Sur Windows, le torch de PyPI est la version CPU : on prend la version CUDA
+# sur l'index de PyTorch pour utiliser la carte NVIDIA.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

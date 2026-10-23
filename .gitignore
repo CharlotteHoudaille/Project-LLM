@@ -1,0 +1,35 @@
+# Livres et extraits TinyStories téléchargés (le notebook 01 et le notebook 04 les retéléchargent)
+data/raw/
+
+# Données en tokens (régénérées par le notebook 04, ~75 Mo)
+*.pt
+
+# Sorties d'entraînement
+runs/
+figures/
+
+# Modèles : on ne partage que le modèle final, utilisé par le site et generer.py.
+# Les autres se refont avec les notebooks 02 à 08.
+checkpoints/*
+!checkpoints/gpt_comptines_v2.pt
+
+# Environnement
+.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Éditeurs et OS
+.vscode/
+.idea/
+.DS_Store
+desktop.ini
+
+# Documents Office (exports du document explicatif)
+*.docx
+~$*
+
+# État de session Claude Code
+.claude/

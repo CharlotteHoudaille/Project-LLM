@@ -1,0 +1,344 @@
+:root {
+  --dark: #2d2d2d;
+  --muted: rgba(45, 45, 45, 0.62);
+  --white: #fffdf9;
+  --blue: #0477bd;
+  --sky-blue: #299bde;
+  --yellow: #ffc500;
+  --red: #e5644d;
+  --green: #389975;
+  --pink: #fc94aa;
+  --orange: #f7914e;
+  --radius: 28px;
+  --title: "Baloo 2", system-ui, sans-serif;
+  --hand: "Walter Turncoat", "Comic Sans MS", cursive;
+  --text: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; } /* sinon un display: flex l'emporte sur l'attribut hidden */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--text);
+  color: var(--dark);
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 30%, var(--white) 0%, rgba(255, 253, 249, 0) 70%),
+    linear-gradient(180deg, #d9eaf9 0%, #e9f3fc 45%, #f6f9fc 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* --- Le ciel et ses nuages ---------------------------------------------------------- */
+
+.sky { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.cloud { position: absolute; width: 180px; opacity: 0.9; animation: drift linear infinite; }
+.c1 { top: 6%;  width: 220px; animation-duration: 95s;  animation-delay: -20s; }
+.c2 { top: 18%; width: 130px; animation-duration: 70s;  animation-delay: -50s; opacity: 0.75; }
+.c3 { top: 42%; width: 260px; animation-duration: 120s; animation-delay: -80s; }
+.c4 { top: 63%; width: 150px; animation-duration: 85s;  animation-delay: -10s; opacity: 0.8; }
+.c5 { top: 80%; width: 240px; animation-duration: 110s; animation-delay: -60s; }
+.c6 { top: 30%; width: 100px; animation-duration: 60s;  animation-delay: -35s; opacity: 0.7; }
+
+@keyframes drift {
+  from { transform: translateX(-300px); }
+  to   { transform: translateX(calc(100vw + 300px)); }
+}
+
+/* --- Mise en page ----------------------------------------------------------------- */
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+header { text-align: center; }
+
+.subtitle {
+  margin: 0 0 4px;
+  font-family: var(--hand);
+  font-size: 18px;
+  color: var(--muted);
+}
+
+/* --- Le titre aux lettres qui sautent ---------------------------------------------- */
+
+.title {
+  margin: 0;
+  font-family: var(--title);
+  font-weight: 800;
+  font-size: clamp(44px, 10vw, 84px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--dark);
+  user-select: none;
+}
+.title-line { display: block; }
+.char { display: inline-block; cursor: default; will-change: transform; }
+.char.space { width: 0.28em; }
+
+/* --- Les cartes ----------------------------------------------------------------- */
+
+.card {
+  background: rgba(255, 253, 249, 0.92);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 2px 0 rgba(4, 119, 189, 0.08), 0 18px 40px -18px rgba(4, 119, 189, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-label, .ideas-label {
+  margin: 0;
+  font-family: var(--title);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+/* --- Les trois emplacements de mots ---------------------------------------------------- */
+
+.slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.slot {
+  --c: var(--blue);
+  position: relative;
+  height: 56px;
+  border-radius: 999px;
+  border: 2px dashed rgba(45, 45, 45, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--title);
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(45, 45, 45, 0.3);
+  transition: border-color 0.25s, background 0.25s, transform 0.25s;
+}
+.slot:nth-child(1) { --c: var(--blue); }
+.slot:nth-child(2) { --c: var(--green); }
+.slot:nth-child(3) { --c: var(--orange); }
+
+.slot.filled {
+  border: 2px solid var(--c);
+  background: color-mix(in srgb, var(--c) 12%, transparent);
+  color: var(--dark);
+  animation: pop 0.35s cubic-bezier(.3, 1.6, .5, 1);
+}
+
+.slot input {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 0 18px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  border-radius: 999px;
+  outline: none;
+}
+.slot input:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 35%, transparent); }
+
+.slot .remove {
+  position: absolute;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+.slot .remove:hover { background: rgba(45, 45, 45, 0.08); color: var(--dark); }
+
+@keyframes pop {
+  from { transform: scale(0.85); }
+  to   { transform: scale(1); }
+}
+
+/* --- La barre de saisie -------------------------------------------------------- */
+
+.add { display: flex; gap: 10px; }
+.add input {
+  flex: 1;
+  min-width: 0;
+  height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 2px solid rgba(45, 45, 45, 0.12);
+  background: #fff;
+  font: 500 16px var(--text);
+  color: var(--dark);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.add input:focus { border-color: var(--sky-blue); }
+.add input:disabled { background: rgba(255, 255, 255, 0.5); }
+
+.hint { margin: -6px 0 0; font-size: 14px; color: var(--muted); min-height: 1.4em; }
+
+/* --- Les boutons ----------------------------------------------------------------- */
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  font-family: var(--title);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, opacity 0.2s;
+}
+.btn:disabled { cursor: not-allowed; opacity: 0.45; }
+
+.btn-main {
+  align-self: center;
+  height: 58px;
+  padding: 0 34px;
+  font-size: 20px;
+  color: var(--white);
+  background: var(--sky-blue);
+  box-shadow: 0 5px 0 var(--blue);
+}
+.btn-main:not(:disabled):hover { transform: translateY(-2px); box-shadow: 0 7px 0 var(--blue); }
+.btn-main:not(:disabled):active { transform: translateY(3px); box-shadow: 0 2px 0 var(--blue); }
+
+.btn-ghost {
+  height: 52px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: var(--blue);
+  background: #fff;
+  box-shadow: inset 0 0 0 2px var(--sky-blue);
+}
+.btn-ghost:not(:disabled):hover { background: #eef6fd; }
+
+.btn-small {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 13px;
+  color: var(--blue);
+  background: rgba(255, 255, 255, 0.85);
+}
+.btn-small:hover { background: #fff; }
+
+/* --- Les bulles d'idées ------------------------------------------------------------ */
+
+.ideas { display: flex; flex-direction: column; gap: 14px; }
+.ideas-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.bubbles { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 12px; padding: 4px 0; }
+
+.bubble {
+  --c: var(--blue);
+  position: relative;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 22px 22px 22px 6px;
+  background: #fff;
+  color: var(--dark);
+  font: 600 16px var(--text);
+  cursor: pointer;
+  box-shadow: 0 3px 0 color-mix(in srgb, var(--c) 55%, transparent), 0 10px 22px -12px rgba(4, 119, 189, 0.5);
+  animation: bob 4s ease-in-out infinite;
+  transition: transform 0.2s, opacity 0.3s, background 0.2s;
+}
+.bubble::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--c);
+  vertical-align: 1px;
+}
+.bubble:hover { background: color-mix(in srgb, var(--c) 14%, #fff); animation-play-state: paused; transform: translateY(-4px) scale(1.06); }
+.bubble.used {
+  pointer-events: none;
+  background: color-mix(in srgb, var(--c) 22%, #fff);
+  animation-play-state: paused;
+}
+.bubble.used::before { content: "✓"; width: auto; height: auto; background: none; color: var(--c); font-weight: 700; }
+.bubble:disabled { cursor: not-allowed; opacity: 0.45; }
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+/* --- La comptine --------------------------------------------------------------- */
+
+.result { align-items: center; text-align: center; padding: 34px 28px; }
+
+.poem { display: flex; flex-direction: column; gap: 6px; }
+.poem-line {
+  font-family: var(--title);
+  font-weight: 600;
+  font-size: clamp(20px, 3.6vw, 26px);
+  line-height: 1.3;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: line-in 0.5s ease forwards;
+}
+.poem-line mark {
+  background: none;
+  color: var(--c, var(--blue));
+  font-weight: 800;
+  border-bottom: 3px solid color-mix(in srgb, var(--c, var(--blue)) 40%, transparent);
+}
+
+@keyframes line-in { to { opacity: 1; transform: translateY(0); } }
+
+.meta { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+.error { color: var(--red); font-weight: 600; }
+
+.writing { display: flex; align-items: center; gap: 6px; font-family: var(--hand); color: var(--muted); }
+.writing-text { margin-left: 8px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--sky-blue); animation: hop 0.9s ease-in-out infinite; }
+.dot:nth-child(2) { background: var(--green); animation-delay: 0.15s; }
+.dot:nth-child(3) { background: var(--orange); animation-delay: 0.3s; }
+
+@keyframes hop {
+  0%, 100% { transform: translateY(0); }
+  40%      { transform: translateY(-9px); }
+}
+
+/* --- Petits écrans et mouvement réduit --------------------------------------------------- */
+
+@media (max-width: 560px) {
+  main { padding-top: 36px; gap: 22px; }
+  .card { padding: 20px; }
+  .slots { grid-template-columns: 1fr; gap: 10px; }
+  .slot { height: 50px; }
+  .add { flex-direction: column; }
+  .add input { flex: none; } /* en colonne, flex: 1 écraserait sa hauteur */
+  .add .btn-ghost { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud, .bubble, .dot { animation: none; }
+  .poem-line { animation-duration: 0.01s; }
+}
