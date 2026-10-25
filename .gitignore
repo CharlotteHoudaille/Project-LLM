@@ -33,3 +33,6 @@ desktop.ini
 
 # État de session Claude Code
 .claude/
+
+# Ancien clone du dépôt, à supprimer
+Project LLM/
