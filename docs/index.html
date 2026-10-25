@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Little Rhyme Maker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Plus+Jakarta+Sans:wght@400;600;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <svg class="cloud c1" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+    <svg class="cloud c2" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+    <svg class="cloud c3" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+    <svg class="cloud c4" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+    <svg class="cloud c5" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+    <svg class="cloud c6" viewBox="0 0 200 90"><use href="#cloud"/></svg>
+  </div>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="cloud" viewBox="0 0 200 90">
+        <path d="M38 82c-18 0-30-11-30-25s12-25 28-25c3-17 18-28 36-28 15 0 28 8 34 20 5-3 11-5 18-5 18 0 32 13 33 29 13 1 23 11 23 23 0 6-5 11-11 11z" fill="#ffffff"/>
+        <path d="M38 82c-18 0-30-11-30-25 0-2 0-3 1-5 4 9 14 15 27 15h147c4 0 7-1 9-3 0 10-5 18-11 18z" fill="#dcebf8"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+    <header>
+      <p class="subtitle">Pick two or three words…</p>
+      <h1 class="title" aria-label="The Little Rhyme Maker">
+        <span class="title-line">The little</span>
+        <span class="title-line">rhyme maker</span>
+      </h1>
+    </header>
+
+    <section class="card" aria-labelledby="words-label">
+      <h2 id="words-label" class="card-label">Your words</h2>
+      <ul class="slots" id="slots" aria-live="polite"></ul>
+
+      <form class="add" id="add-form" autocomplete="off">
+        <input id="word-input" type="text" maxlength="20" placeholder="Type a word, then press Enter"
+               aria-label="A keyword, in English">
+        <button type="submit" class="btn btn-ghost" id="add-btn">Add</button>
+      </form>
+      <p class="hint" id="hint">Add at least 2 words.</p>
+
+      <button class="btn btn-main" id="generate-btn" disabled>Generate a comptine</button>
+    </section>
+
+    <section class="ideas" aria-labelledby="ideas-label">
+      <div class="ideas-head">
+        <h2 id="ideas-label" class="ideas-label">Not inspired? Pick a bubble</h2>
+        <button class="btn btn-small" id="shuffle-btn" type="button">Other words</button>
+      </div>
+      <div class="bubbles" id="bubbles"></div>
+    </section>
+
+    <section class="result card" id="result" hidden aria-live="polite">
+      <div class="writing" id="writing" hidden>
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="writing-text">Writing your comptine…</span>
+      </div>
+      <div class="poem" id="poem"></div>
+      <p class="meta" id="meta"></p>
+      <button class="btn btn-ghost" id="again-btn" hidden>Another one with the same words</button>
+    </section>
+  </main>
+
+  <script>window.RHYME_MODE = "browser";</script>
+  <script src="app.js"></script>
+</body>
+</html>

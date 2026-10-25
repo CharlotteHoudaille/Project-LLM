@@ -16,7 +16,10 @@ Tout est construit avec les outils du cours (séance 2, du bigramme au GPT) :
 PyTorch, tiktoken, scikit-learn, matplotlib, TensorBoard, et un environnement
 géré par [uv](https://docs.astral.sh/uv/).
 
-## Essayer en 3 commandes
+**Essayer en ligne, sans rien installer :** https://charlottehoudaille.github.io/Project-LLM/
+(le modèle tourne directement dans le navigateur ; le premier chargement télécharge 16 Mo).
+
+## Essayer en local en 3 commandes
 
 Le modèle final (`checkpoints/gpt_comptines_v2.pt`, 44 Mo) est inclus : pas besoin
 de réentraîner pour l'essayer.
@@ -110,6 +113,27 @@ modèle quel genre écrire (*control code*).
 
 Le modèle écrit toujours chaque comptine lui-même, token par token.
 
+## Deux versions du site
+
+| | Version Python (référence) | Version web (GitHub Pages) |
+| --- | --- | --- |
+| Lancement | `uv run python serveur.py` | https://charlottehoudaille.github.io/Project-LLM/ |
+| Où tourne le modèle | dans `serveur.py`, avec PyTorch (GPU ou CPU) | dans le navigateur du visiteur, avec `site/model.js` |
+| Fichiers | `site/`, `serveur.py`, `comptines.py` | `docs/`, produit par `exporter_web.py` |
+
+La version web est une **traduction en JavaScript** du même modèle : `exporter_web.py`
+exporte les poids en demi-précision (16 Mo) et la table du tokenizer BPE de GPT-2, et
+`site/model.js` refait le passage avant du GPT (embeddings, attention masquée, feed-forward,
+LayerNorm), avec un cache des clés et valeurs pour ne pas tout recalculer à chaque token,
+puis la même génération que `generer.py`. Ses sorties ont été vérifiées contre PyTorch :
+mêmes tokens, et logits identiques à 5 millionièmes près.
+
+Après une modification du modèle ou du site, régénérer la version web :
+
+```bash
+uv run python exporter_web.py
+```
+
 ## Résultats
 
 Sur les 174 comptines de 4 vers de validation :
@@ -132,7 +156,9 @@ ses vers au lieu de réciter le corpus.
 ├── comptines.py        code partagé : tokenizers, datasets, GPT, génération, rimes
 ├── generer.py          génération en ligne de commande
 ├── serveur.py          le site, en local (bibliothèque standard uniquement)
-├── site/               la page : index.html, style.css, app.js
+├── site/               la page : index.html, style.css, app.js, et model.js / worker.js (le GPT en JavaScript)
+├── exporter_web.py     exporte le modèle et la page vers docs/
+├── docs/               la version web, servie par GitHub Pages (poids, tokenizer, page)
 ├── checkpoints/        le modèle final (gpt_comptines_v2.pt)
 ├── data/               les comptines nettoyées, le vocabulaire et la table d'IDF
 ├── PLAN.md             les choix faits et les résultats, étape par étape

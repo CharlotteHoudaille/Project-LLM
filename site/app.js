@@ -1,5 +1,8 @@
 // The Little Rhyme Maker : la page du générateur de comptines.
-// Parle au serveur local (serveur.py) par POST /api/generate.
+// Deux modes :
+// - "server" (par défaut) : la page parle à serveur.py, qui fait tourner le modèle PyTorch ;
+// - "browser" (version GitHub Pages, docs/) : le modèle tourne dans la page, avec model.js
+//   dans un Web Worker. exporter_web.py met window.RHYME_MODE = "browser".
 
 const MAX_WORDS = 3;
 const MIN_WORDS = 2;
@@ -18,6 +21,7 @@ const BUBBLES_SHOWN = 10;
 // Servie par serveur.py, la page appelle sa propre adresse ; ouverte directement
 // depuis le disque (file://), elle appelle le serveur local à son adresse fixe.
 const API_URL = location.protocol === "file:" ? "http://127.0.0.1:8000/api/generate" : "/api/generate";
+const IN_BROWSER = window.RHYME_MODE === "browser";
 
 const words = [null, null, null]; // un mot par emplacement, null = vide
 let lastWords = null;
@@ -151,6 +155,65 @@ function renderBubbles() {
   updateControls();
 }
 
+// --- Le modèle dans la page (mode "browser") ---------------------------------------------
+
+let worker = null;
+let modelReady = null;
+const pending = new Map();
+let nextId = 0;
+const modelStatus = document.createElement("p");
+modelStatus.className = "hint model-status";
+
+function startModel() {
+  worker = new Worker("worker.js");
+  generateBtn.after(modelStatus);
+  modelStatus.textContent = "Loading the model (16 MB, only the first time)…";
+  modelReady = new Promise((resolve, reject) => {
+    worker.onmessage = ({ data }) => {
+      if (data.type === "progress") {
+        modelStatus.textContent = `Loading the model… ${Math.round(data.ratio * 100)}%`;
+      } else if (data.type === "ready") {
+        modelStatus.textContent = "The model runs right here, in your browser.";
+        resolve();
+      } else if (data.type === "result" || data.type === "error") {
+        const job = pending.get(data.id);
+        if (!job) { if (data.type === "error") reject(new Error(data.message)); return; }
+        pending.delete(data.id);
+        data.type === "result" ? job.resolve(data.data) : job.reject(new Error(data.message));
+      }
+    };
+  });
+  modelReady.catch((err) => { modelStatus.textContent = `The model could not load (${err.message}).`; });
+  worker.postMessage({ type: "load" });
+}
+
+async function writeInBrowser(list) {
+  await modelReady;
+  return new Promise((resolve, reject) => {
+    const id = nextId++;
+    pending.set(id, { resolve, reject });
+    worker.postMessage({ type: "generate", id, words: list });
+  });
+}
+
+async function writeOnServer(list) {
+  let response;
+  try {
+    response = await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ words: list }),
+    });
+  } catch {
+    // Pas de réponse du tout : le serveur n'est pas lancé (ou pas à cette adresse).
+    throw new Error("The rhyme server is not answering. In the project folder, run "
+      + "\"uv run python serveur.py\", wait for \"site : http://localhost:8000\", then open that address.");
+  }
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.error || "the server said no");
+  return data;
+}
+
 // --- La génération -----------------------------------------------------------------
 
 async function generate(list) {
@@ -163,21 +226,7 @@ async function generate(list) {
   generateBtn.disabled = true;
   resultEl.scrollIntoView({ behavior: "smooth", block: "center" });
   try {
-    let response;
-    try {
-      response = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ words: list }),
-      });
-    } catch {
-      // Pas de réponse du tout : le serveur n'est pas lancé (ou pas à cette adresse).
-      throw new Error("The rhyme server is not answering. In the project folder, run "
-        + "\"uv run python serveur.py\", wait for \"site : http://localhost:8000\", then open that address.");
-    }
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || "the server said no");
-    showPoem(data);
+    showPoem(IN_BROWSER ? await writeInBrowser(list) : await writeOnServer(list));
   } catch (err) {
     metaEl.textContent = "";
     const p = document.createElement("span");
@@ -230,3 +279,4 @@ $("shuffle-btn").addEventListener("click", renderBubbles);
 splitTitle();
 renderSlots();
 renderBubbles();
+if (IN_BROWSER) startModel(); // le téléchargement commence pendant qu'on choisit ses mots

@@ -1,0 +1,642 @@
+{
+ "config": {
+  "vocab_size": 14122,
+  "block_size": 256,
+  "n_embd": 256,
+  "n_head": 8,
+  "n_layer": 6
+ },
+ "generation": {
+  "keyword_boost": 6,
+  "n": 8,
+  "keyword_weight": 2.0,
+  "max_words": 12,
+  "genre": "rhyme",
+  "temperature": 0.8,
+  "top_k": 40,
+  "n_lines": 4,
+  "max_new_tokens": 250
+ },
+ "dtype": "float16",
+ "tensors": [
+  {
+   "name": "tok_emb",
+   "shape": [
+    14122,
+    256
+   ],
+   "offset": 0
+  },
+  {
+   "name": "pos_emb",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 3615232
+  },
+  {
+   "name": "l0.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 3680768
+  },
+  {
+   "name": "l0.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 3681024
+  },
+  {
+   "name": "l0.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 3681280
+  },
+  {
+   "name": "l0.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 3746816
+  },
+  {
+   "name": "l0.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 3812352
+  },
+  {
+   "name": "l0.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 3877888
+  },
+  {
+   "name": "l0.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 3943424
+  },
+  {
+   "name": "l0.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 3943680
+  },
+  {
+   "name": "l0.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 3943936
+  },
+  {
+   "name": "l0.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 3944192
+  },
+  {
+   "name": "l0.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 4206336
+  },
+  {
+   "name": "l0.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 4207360
+  },
+  {
+   "name": "l0.b2",
+   "shape": [
+    256
+   ],
+   "offset": 4469504
+  },
+  {
+   "name": "l1.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 4469760
+  },
+  {
+   "name": "l1.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 4470016
+  },
+  {
+   "name": "l1.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 4470272
+  },
+  {
+   "name": "l1.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 4535808
+  },
+  {
+   "name": "l1.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 4601344
+  },
+  {
+   "name": "l1.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 4666880
+  },
+  {
+   "name": "l1.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 4732416
+  },
+  {
+   "name": "l1.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 4732672
+  },
+  {
+   "name": "l1.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 4732928
+  },
+  {
+   "name": "l1.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 4733184
+  },
+  {
+   "name": "l1.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 4995328
+  },
+  {
+   "name": "l1.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 4996352
+  },
+  {
+   "name": "l1.b2",
+   "shape": [
+    256
+   ],
+   "offset": 5258496
+  },
+  {
+   "name": "l2.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 5258752
+  },
+  {
+   "name": "l2.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 5259008
+  },
+  {
+   "name": "l2.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 5259264
+  },
+  {
+   "name": "l2.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 5324800
+  },
+  {
+   "name": "l2.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 5390336
+  },
+  {
+   "name": "l2.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 5455872
+  },
+  {
+   "name": "l2.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 5521408
+  },
+  {
+   "name": "l2.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 5521664
+  },
+  {
+   "name": "l2.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 5521920
+  },
+  {
+   "name": "l2.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 5522176
+  },
+  {
+   "name": "l2.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 5784320
+  },
+  {
+   "name": "l2.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 5785344
+  },
+  {
+   "name": "l2.b2",
+   "shape": [
+    256
+   ],
+   "offset": 6047488
+  },
+  {
+   "name": "l3.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 6047744
+  },
+  {
+   "name": "l3.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 6048000
+  },
+  {
+   "name": "l3.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6048256
+  },
+  {
+   "name": "l3.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6113792
+  },
+  {
+   "name": "l3.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6179328
+  },
+  {
+   "name": "l3.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6244864
+  },
+  {
+   "name": "l3.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 6310400
+  },
+  {
+   "name": "l3.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 6310656
+  },
+  {
+   "name": "l3.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 6310912
+  },
+  {
+   "name": "l3.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 6311168
+  },
+  {
+   "name": "l3.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 6573312
+  },
+  {
+   "name": "l3.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 6574336
+  },
+  {
+   "name": "l3.b2",
+   "shape": [
+    256
+   ],
+   "offset": 6836480
+  },
+  {
+   "name": "l4.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 6836736
+  },
+  {
+   "name": "l4.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 6836992
+  },
+  {
+   "name": "l4.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6837248
+  },
+  {
+   "name": "l4.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6902784
+  },
+  {
+   "name": "l4.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 6968320
+  },
+  {
+   "name": "l4.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 7033856
+  },
+  {
+   "name": "l4.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 7099392
+  },
+  {
+   "name": "l4.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 7099648
+  },
+  {
+   "name": "l4.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 7099904
+  },
+  {
+   "name": "l4.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 7100160
+  },
+  {
+   "name": "l4.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 7362304
+  },
+  {
+   "name": "l4.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 7363328
+  },
+  {
+   "name": "l4.b2",
+   "shape": [
+    256
+   ],
+   "offset": 7625472
+  },
+  {
+   "name": "l5.ln1_w",
+   "shape": [
+    256
+   ],
+   "offset": 7625728
+  },
+  {
+   "name": "l5.ln1_b",
+   "shape": [
+    256
+   ],
+   "offset": 7625984
+  },
+  {
+   "name": "l5.wq",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 7626240
+  },
+  {
+   "name": "l5.wk",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 7691776
+  },
+  {
+   "name": "l5.wv",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 7757312
+  },
+  {
+   "name": "l5.wproj",
+   "shape": [
+    256,
+    256
+   ],
+   "offset": 7822848
+  },
+  {
+   "name": "l5.bproj",
+   "shape": [
+    256
+   ],
+   "offset": 7888384
+  },
+  {
+   "name": "l5.ln2_w",
+   "shape": [
+    256
+   ],
+   "offset": 7888640
+  },
+  {
+   "name": "l5.ln2_b",
+   "shape": [
+    256
+   ],
+   "offset": 7888896
+  },
+  {
+   "name": "l5.w1",
+   "shape": [
+    1024,
+    256
+   ],
+   "offset": 7889152
+  },
+  {
+   "name": "l5.b1",
+   "shape": [
+    1024
+   ],
+   "offset": 8151296
+  },
+  {
+   "name": "l5.w2",
+   "shape": [
+    256,
+    1024
+   ],
+   "offset": 8152320
+  },
+  {
+   "name": "l5.b2",
+   "shape": [
+    256
+   ],
+   "offset": 8414464
+  },
+  {
+   "name": "ln_f_w",
+   "shape": [
+    256
+   ],
+   "offset": 8414720
+  },
+  {
+   "name": "ln_f_b",
+   "shape": [
+    256
+   ],
+   "offset": 8414976
+  },
+  {
+   "name": "lm_bias",
+   "shape": [
+    14122
+   ],
+   "offset": 8415232
+  }
+ ]
+}

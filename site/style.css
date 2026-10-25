@@ -342,3 +342,6 @@ header { text-align: center; }
   .cloud, .bubble, .dot { animation: none; }
   .poem-line { animation-duration: 0.01s; }
 }
+
+/* --- Mode navigateur : l'état du modèle sous le bouton ---------------------------------- */
+.model-status { margin: -4px 0 0; text-align: center; }

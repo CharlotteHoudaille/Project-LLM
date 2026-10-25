@@ -10,6 +10,7 @@ Uniquement la bibliothèque standard (`http.server`) en plus du projet : rien à
 """
 
 import json
+import os
 import re
 import threading
 import time
@@ -24,7 +25,9 @@ from comptines import BPETokenizer, GPTLanguageModel, best_of_n, keyword_hits, r
 ROOT = Path(__file__).resolve().parent
 SITE_DIR = ROOT / "site"
 CHECKPOINTS = [ROOT / "checkpoints" / "gpt_comptines_v2.pt", ROOT / "checkpoints" / "gpt_comptines_final.pt"]
-PORT = 8000
+# En local : 127.0.0.1:8000. Sur Hugging Face Spaces, le Dockerfile fixe HOST=0.0.0.0 et PORT=7860.
+HOST = os.environ.get("HOST", "127.0.0.1")
+PORT = int(os.environ.get("PORT", 8000))
 MAX_WORDS = 3
 
 # --- Le modèle, chargé une seule fois au démarrage ----------------------------------
@@ -113,4 +116,4 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     print(f"modèle : {checkpoint_path.name} sur {device}")
     print(f"site   : http://localhost:{PORT}")
-    ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
+    ThreadingHTTPServer((HOST, PORT), Handler).serve_forever()
