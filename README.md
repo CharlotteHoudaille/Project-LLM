@@ -19,6 +19,15 @@ géré par [uv](https://docs.astral.sh/uv/).
 **Essayer en ligne, sans rien installer :** https://charlottehoudaille.github.io/Project-LLM/
 (le modèle tourne directement dans le navigateur ; le premier chargement télécharge 16 Mo).
 
+Le projet a **deux parties** :
+
+| | Projet initial | Expérience LoRA |
+| --- | --- | --- |
+| Idée | Construire et entraîner **notre propre GPT** de zéro | **Adapter un modèle déjà entraîné** (SmolLM2) avec LoRA |
+| Modèle | GPT de 8,4 M de paramètres, tous entraînés par nous | SmolLM2-360M, dont 4,3 M de paramètres entraînés (1,2 %) |
+| Où | notebooks `01` à `08`, `comptines.py` | dossier [`lora_experiments/`](lora_experiments/README.md) |
+| Sur le site | « Our GPT » (étiquette *Project*) | « SmolLM2 + LoRA » (étiquette *LoRA experiment*) |
+
 ## Essayer en local en 3 commandes
 
 Le modèle final (`checkpoints/gpt_comptines_v2.pt`, 44 Mo) est inclus : pas besoin
@@ -29,8 +38,10 @@ uv sync
 uv run python serveur.py
 ```
 
-Puis ouvrir **http://localhost:8000** : on choisit 2 ou 3 mots (en les tapant ou
-en cliquant sur les bulles d'idées) et on clique sur *Generate a comptine*.
+Puis ouvrir **http://localhost:8000** : on choisit le modèle (*Our GPT*, *SmolLM2 + LoRA*
+ou *Compare both* pour les deux côte à côte), 2 ou 3 mots (en les tapant ou en cliquant sur
+les bulles d'idées), et on clique sur *Generate a comptine*. Le modèle LoRA se charge en
+arrière-plan au démarrage (environ 20 s) ; une comptine LoRA prend environ 10 s sur GPU.
 
 Sans le site, en ligne de commande :
 
@@ -120,6 +131,7 @@ Le modèle écrit toujours chaque comptine lui-même, token par token.
 | Lancement | `uv run python serveur.py` | https://charlottehoudaille.github.io/Project-LLM/ |
 | Où tourne le modèle | dans `serveur.py`, avec PyTorch (GPU ou CPU) | dans le navigateur du visiteur, avec `site/model.js` |
 | Fichiers | `site/`, `serveur.py`, `comptines.py` | `docs/`, produit par `exporter_web.py` |
+| Modèles proposés | notre GPT **et** l'expérience LoRA (ou les deux côte à côte) | notre GPT seulement : SmolLM2-360M est trop lourd pour tourner dans un navigateur |
 
 La version web est une **traduction en JavaScript** du même modèle : `exporter_web.py`
 exporte les poids en demi-précision (16 Mo) et la table du tokenizer BPE de GPT-2, et
@@ -148,6 +160,26 @@ Sur les 174 comptines de 4 vers de validation :
 ses vers au lieu de réciter le corpus.
 **Ce qui reste faible** : le sens (8,4 M de paramètres, c'est minuscule) et les rimes.
 
+## Expérience LoRA : partir d'un modèle pré-entraîné
+
+Pour améliorer le sens, la seconde partie du projet part d'un modèle qui sait déjà l'anglais,
+**SmolLM2** (Hugging Face), et l'adapte à nos comptines avec **LoRA** : les poids du modèle sont
+gelés, et seules de petites matrices ajoutées à ses couches linéaires sont entraînées. Tout est
+dans [`lora_experiments/`](lora_experiments/README.md), indépendant du projet initial.
+
+Sur un jeu de test propre de 77 comptines (aucune version vue à l'entraînement, par aucun modèle),
+chaque modèle écrivant une seule comptine par consigne, sans aide :
+
+| Modèle | Paramètres entraînés | Mots-clés repris | 4 vers | Bits / caractère |
+| --- | --- | --- | --- | --- |
+| Notre GPT (projet initial) | 8,4 M (tous) | 15,4 % | 56 % | 2,12 |
+| SmolLM2-360M sans adaptation | 0 | 30,5 % | 52 % | 1,39 |
+| **SmolLM2-360M + LoRA** | **4,3 M (1,2 %)** | **54,3 %** | **99 %** | **1,17** |
+
+Les comptines LoRA sont nettement plus grammaticales et cohérentes ; les rimes, elles, restent
+faibles pour tous les modèles. Détails, limites et fiches pour l'oral :
+[lora_experiments/README.md](lora_experiments/README.md).
+
 ## Structure du dépôt
 
 ```
@@ -162,6 +194,7 @@ ses vers au lieu de réciter le corpus.
 ├── checkpoints/        le modèle final (gpt_comptines_v2.pt)
 ├── data/               les comptines nettoyées, le vocabulaire et la table d'IDF
 ├── PLAN.md             les choix faits et les résultats, étape par étape
+├── lora_experiments/   l'expérience LoRA (SmolLM2 + LoRA) : données, entraînement, évaluation, README
 └── pyproject.toml, uv.lock
 ```
 

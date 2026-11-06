@@ -1,0 +1,127 @@
+{
+  "test_examples": 77,
+  "generation": {
+    "base": {
+      "bpc": 1.477150592721189,
+      "perplexity": 32.140431458299346,
+      "keywords_used": 0.11904761904761904,
+      "all_keywords": 0.05194805194805195,
+      "rhyming_lines": 0.047619047619047616,
+      "aabb": 0.0,
+      "four_lines": 0.7012987012987013,
+      "words_per_line": 4.817120622568093,
+      "distinct_2": 0.6829944547134935,
+      "copied_lines": 0.0
+    },
+    "style": {
+      "bpc": 1.3377328066039784,
+      "perplexity": 23.16390431752971,
+      "keywords_used": 0.012987012987012988,
+      "all_keywords": 0.012987012987012988,
+      "rhyming_lines": 0.012987012987012988,
+      "aabb": 0.0,
+      "four_lines": 0.8051948051948052,
+      "words_per_line": 6.250883392226148,
+      "distinct_2": 0.7078189300411523,
+      "copied_lines": 0.02158273381294964
+    },
+    "keywords": {
+      "bpc": 1.2525209902104621,
+      "perplexity": 18.96160311649015,
+      "keywords_used": 0.5,
+      "all_keywords": 0.22077922077922077,
+      "rhyming_lines": 0.01948051948051948,
+      "aabb": 0.0,
+      "four_lines": 0.961038961038961,
+      "words_per_line": 6.363036303630363,
+      "distinct_2": 0.7129186602870813,
+      "copied_lines": 0.010101010101010102
+    },
+    "base_360m": {
+      "bpc": 1.3910062523278437,
+      "perplexity": 26.252072307052728,
+      "keywords_used": 0.3051948051948052,
+      "all_keywords": 0.16883116883116883,
+      "rhyming_lines": 0.01948051948051948,
+      "aabb": 0.0,
+      "four_lines": 0.5194805194805194,
+      "words_per_line": 4.658878504672897,
+      "distinct_2": 0.7558282208588957,
+      "copied_lines": 0.0
+    },
+    "keywords_360m": {
+      "bpc": 1.1743190155238223,
+      "perplexity": 15.779385263885146,
+      "keywords_used": 0.5432900432900433,
+      "all_keywords": 0.2857142857142857,
+      "rhyming_lines": 0.025974025974025976,
+      "aabb": 0.0,
+      "four_lines": 0.987012987012987,
+      "words_per_line": 6.369281045751634,
+      "distinct_2": 0.7103484139365575,
+      "copied_lines": 0.016556291390728478
+    },
+    "historique": {
+      "bpc": 2.1246718471199344,
+      "perplexity": null,
+      "keywords_used": 0.1536796536796537,
+      "all_keywords": 0.03896103896103896,
+      "rhyming_lines": 0.045454545454545456,
+      "aabb": 0.0,
+      "four_lines": 0.5584415584415584,
+      "words_per_line": 6.3992673992674,
+      "distinct_2": 0.6940045248868778,
+      "copied_lines": 0.007434944237918215
+    },
+    "vraies comptines": {
+      "bpc": null,
+      "perplexity": null,
+      "keywords_used": 1.0,
+      "all_keywords": 1.0,
+      "rhyming_lines": 0.3961038961038961,
+      "aabb": 0.09090909090909091,
+      "four_lines": 1.0,
+      "words_per_line": 6.759740259740259,
+      "distinct_2": 0.8545454545454545,
+      "copied_lines": 0.025974025974025976
+    }
+  },
+  "training": {
+    "style": {
+      "trainable_params": 2442240,
+      "total_params": 134515008,
+      "train_seconds": 708.3,
+      "steps": 489,
+      "best_step": 300,
+      "val_loss": 3.0399410724639893,
+      "val_perplexity": 20.904011376914745,
+      "test_loss": 3.0626065731048584,
+      "test_perplexity": 21.383221514002816,
+      "device": "cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"
+    },
+    "keywords": {
+      "trainable_params": 2442240,
+      "total_params": 134515008,
+      "train_seconds": 755.8,
+      "steps": 582,
+      "best_step": 200,
+      "val_loss": 2.798837184906006,
+      "val_perplexity": 16.425535801031835,
+      "test_loss": 2.9500484466552734,
+      "test_perplexity": 19.106879370207537,
+      "device": "cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"
+    },
+    "keywords_360m": {
+      "trainable_params": 4341760,
+      "total_params": 361821120,
+      "train_seconds": 1127.7,
+      "steps": 388,
+      "best_step": 200,
+      "val_loss": 2.57908296585083,
+      "val_perplexity": 13.185041480676222,
+      "test_loss": 2.7692341804504395,
+      "test_perplexity": 15.946417254397177,
+      "device": "cuda (NVIDIA GeForce RTX 3050 Laptop GPU)"
+    }
+  }
+}

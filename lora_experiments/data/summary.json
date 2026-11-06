@@ -1,0 +1,57 @@
+{
+  "poems": 2981,
+  "groups": 1843,
+  "splits": {
+    "train": 2599,
+    "validation": 249,
+    "test": 133
+  },
+  "schemes_4_lines_train": {
+    "ABCB": 500,
+    "free": 863,
+    "AABB": 154,
+    "ABAB": 32
+  },
+  "experiments": {
+    "style": {
+      "train": {
+        "examples": 2599,
+        "tokens_median": 45,
+        "tokens_max": 153,
+        "truncated": 0
+      },
+      "validation": {
+        "examples": 249,
+        "tokens_median": 45,
+        "tokens_max": 131,
+        "truncated": 0
+      },
+      "test": {
+        "examples": 133,
+        "tokens_median": 45,
+        "tokens_max": 121,
+        "truncated": 0
+      }
+    },
+    "keywords": {
+      "train": {
+        "examples": 3094,
+        "tokens_median": 62,
+        "tokens_max": 102,
+        "truncated": 0
+      },
+      "validation": {
+        "examples": 140,
+        "tokens_median": 61,
+        "tokens_max": 94,
+        "truncated": 0
+      },
+      "test": {
+        "examples": 77,
+        "tokens_median": 64,
+        "tokens_max": 90,
+        "truncated": 0
+      }
+    }
+  }
+}

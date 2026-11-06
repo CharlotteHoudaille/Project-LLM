@@ -1,0 +1,23 @@
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 80/272 [00:00<00:00, 773.07it/s]Loading weights:  58%|█████▊    | 158/272 [00:00<00:00, 587.72it/s]Loading weights:  82%|████████▏ | 222/272 [00:00<00:00, 607.76it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 648.76it/s]
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  21%|██▏       | 58/272 [00:00<00:00, 303.86it/s]Loading weights:  78%|███████▊  | 212/272 [00:00<00:00, 821.62it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 743.30it/s]
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 60/272 [00:00<00:00, 599.24it/s]Loading weights:  49%|████▊     | 132/272 [00:00<00:00, 654.85it/s]Loading weights:  76%|███████▌  | 206/272 [00:00<00:00, 674.27it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 680.06it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/290 [00:00<00:08, 34.08it/s]Loading weights:  13%|█▎        | 37/290 [00:00<00:01, 153.84it/s]Loading weights:  22%|██▏       | 64/290 [00:00<00:01, 198.07it/s]Loading weights:  32%|███▏      | 93/290 [00:00<00:00, 226.31it/s]Loading weights:  41%|████      | 118/290 [00:00<00:00, 206.39it/s]Loading weights:  49%|████▊     | 141/290 [00:00<00:00, 199.68it/s]Loading weights:  56%|█████▌    | 162/290 [00:00<00:00, 181.09it/s]Loading weights:  63%|██████▎   | 184/290 [00:01<00:00, 182.53it/s]Loading weights:  74%|███████▍  | 215/290 [00:01<00:00, 212.75it/s]Loading weights:  83%|████████▎ | 241/290 [00:01<00:00, 213.34it/s]Loading weights:  91%|█████████▏| 265/290 [00:01<00:00, 202.10it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 202.99it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   3%|▎         | 8/290 [00:00<00:03, 79.27it/s]Loading weights:  12%|█▏        | 34/290 [00:00<00:01, 182.53it/s]Loading weights:  22%|██▏       | 64/290 [00:00<00:00, 230.95it/s]Loading weights:  31%|███       | 89/290 [00:00<00:00, 227.39it/s]Loading weights:  39%|███▊      | 112/290 [00:00<00:00, 206.04it/s]Loading weights:  46%|████▌     | 133/290 [00:00<00:00, 186.77it/s]Loading weights:  53%|█████▎    | 153/290 [00:00<00:00, 189.85it/s]Loading weights:  60%|█████▉    | 173/290 [00:00<00:00, 188.30it/s]Loading weights:  68%|██████▊   | 197/290 [00:00<00:00, 202.39it/s]Loading weights:  77%|███████▋  | 224/290 [00:01<00:00, 216.42it/s]Loading weights:  87%|████████▋ | 251/290 [00:01<00:00, 230.68it/s]Loading weights:  96%|█████████▌| 279/290 [00:01<00:00, 238.41it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 217.42it/s]
+jeu de test : 77 comptines de 4 vers
+
+                             bpc     perplexity  keywords_used   all_keywords  rhyming_lines           aabb     four_lines words_per_line     distinct_2   copied_lines
+base                        1.48          32.14          11.9%           5.2%           4.8%           0.0%          70.1%           4.82          68.3%           0.0%
+style                       1.34          23.16           1.3%           1.3%           1.3%           0.0%          80.5%           6.25          70.8%           2.2%
+keywords                    1.25          18.96          50.0%          22.1%           1.9%           0.0%          96.1%           6.36          71.3%           1.0%
+base_360m                   1.39          26.25          30.5%          16.9%           1.9%           0.0%          51.9%           4.66          75.6%           0.0%
+keywords_360m               1.17          15.78          54.3%          28.6%           2.6%           0.0%          98.7%           6.37          71.0%           1.7%
+historique                  2.12              —          15.4%           3.9%           4.5%           0.0%          55.8%           6.40          69.4%           0.7%
+vraies comptines               —              —         100.0%         100.0%          39.6%           9.1%         100.0%           6.76          85.5%           2.6%
+
+style : 2,442,240 paramètres entraînables sur 134,515,008, 708 s, meilleur pas 300/489, val 3.040 (perplexité 20.9)
+
+keywords : 2,442,240 paramètres entraînables sur 134,515,008, 756 s, meilleur pas 200/582, val 2.799 (perplexité 16.4)
+
+keywords_360m : 4,341,760 paramètres entraînables sur 361,821,120, 1128 s, meilleur pas 200/388, val 2.579 (perplexité 13.2)
+
+résultats → lora_experiments\results/

@@ -345,3 +345,49 @@ header { text-align: center; }
 
 /* --- Mode navigateur : l'état du modèle sous le bouton ---------------------------------- */
 .model-status { margin: -4px 0 0; text-align: center; }
+
+/* --- Le choix du modèle : projet initial / expérience LoRA ---------------------------------- */
+
+.model-picker { display: flex; flex-direction: column; gap: 10px; padding-bottom: 18px;
+                border-bottom: 2px dashed rgba(45, 45, 45, 0.1); }
+.model-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+.model-tab {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  padding: 12px 14px; border-radius: 18px; border: 2px solid rgba(45, 45, 45, 0.12);
+  background: #fff; cursor: pointer; text-align: left; font: inherit; color: var(--dark);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.model-tab:not(:disabled):hover { transform: translateY(-2px); }
+.model-tab.active { border-color: var(--c, var(--blue)); background: color-mix(in srgb, var(--c, var(--blue)) 10%, #fff); }
+.model-tab[data-model="original"] { --c: var(--blue); }
+.model-tab[data-model="lora"] { --c: var(--green); }
+.model-tab[data-model="compare"] { --c: var(--orange); }
+.model-tab:disabled { cursor: not-allowed; opacity: 0.45; }
+.model-name { font-family: var(--title); font-weight: 800; font-size: 17px; line-height: 1.1; }
+.model-info { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
+
+.tag {
+  display: inline-block; padding: 3px 10px; border-radius: 999px;
+  font: 800 11px var(--title); letter-spacing: 0.06em; text-transform: uppercase; color: #fff;
+}
+.tag-original { background: var(--blue); }
+.tag-lora { background: var(--green); }
+.tag-compare { background: var(--orange); }
+
+/* --- Les comptines : un panneau par modèle --------------------------------------------- */
+
+.poems { display: grid; gap: 18px; width: 100%; }
+.poems.compare { grid-template-columns: 1fr 1fr; }
+.poem-panel { display: flex; flex-direction: column; align-items: center; gap: 12px;
+              padding: 6px 4px; border-top: 4px solid var(--c, var(--blue)); padding-top: 14px; }
+.poems:not(.compare) .poem-panel { border-top: 0; padding-top: 0; }
+.panel-original { --c: var(--blue); }
+.panel-lora { --c: var(--green); }
+.panel-head { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }
+.panel-name { font-family: var(--title); font-weight: 800; font-size: 15px; color: var(--muted); }
+.poems.compare .poem-line { font-size: clamp(17px, 2.4vw, 21px); }
+
+@media (max-width: 560px) {
+  .model-tabs, .poems.compare { grid-template-columns: 1fr; }
+}

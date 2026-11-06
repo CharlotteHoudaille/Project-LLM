@@ -33,10 +33,32 @@ const hint = $("hint");
 const generateBtn = $("generate-btn");
 const bubblesEl = $("bubbles");
 const resultEl = $("result");
-const writingEl = $("writing");
-const poemEl = $("poem");
-const metaEl = $("meta");
+const poemsEl = $("poems");
 const againBtn = $("again-btn");
+const modelInfo = $("model-info");
+
+// --- Les deux modèles du projet ------------------------------------------------------------
+// "original" : notre GPT, construit de zéro (notebooks 01 à 08) ;
+// "lora"     : l'expérience LoRA (lora_experiments/), SmolLM2 pré-entraîné + adaptateur.
+
+const MODELS = {
+  original: {
+    tag: "Project", name: "Our GPT, built from scratch",
+    info: "Our own GPT, built and trained from scratch in this project: 8.4 M parameters, pretrained on "
+      + "TinyStories, then fine-tuned on nursery rhymes. Keyword boost and best of 8.",
+  },
+  lora: {
+    tag: "LoRA experiment", name: "SmolLM2-360M + LoRA",
+    info: "Experiment: SmolLM2-360M, a model pretrained by Hugging Face on billions of words, adapted to our "
+      + "rhymes with LoRA (4.3 M trained parameters, 1.2 % of the model). Best of 8.",
+  },
+  compare: { info: "Both models write a rhyme with the same words, side by side." },
+};
+const BROWSER_ONLY_REASON = "The LoRA experiment needs the local Python version: "
+  + "\"uv run python serveur.py\", then http://localhost:8000.";
+let mode = "original";
+let loraReason = IN_BROWSER ? BROWSER_ONLY_REASON : "Checking the LoRA model…";
+let loraReady = false;
 
 const clean = (w) => w.toLowerCase().replace(/[^a-z]/g, "").slice(0, 20);
 const filled = () => words.filter(Boolean);
@@ -196,13 +218,13 @@ async function writeInBrowser(list) {
   });
 }
 
-async function writeOnServer(list) {
+async function writeOnServer(list, model) {
   let response;
   try {
     response = await fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ words: list }),
+      body: JSON.stringify({ words: list, model }),
     });
   } catch {
     // Pas de réponse du tout : le serveur n'est pas lancé (ou pas à cette adresse).
@@ -214,33 +236,101 @@ async function writeOnServer(list) {
   return data;
 }
 
+// --- Le choix du modèle ---------------------------------------------------------------
+
+function selectModel(next) {
+  if ((next === "lora" || next === "compare") && !loraReady) next = "original";
+  mode = next;
+  try { localStorage.setItem("rhyme-model", mode); } catch { /* stockage indisponible : pas grave */ }
+  renderModels();
+}
+
+function renderModels() {
+  document.querySelectorAll(".model-tab").forEach((tab) => {
+    const id = tab.dataset.model;
+    const disabled = id !== "original" && !loraReady;
+    tab.disabled = disabled;
+    tab.classList.toggle("active", id === mode);
+    tab.setAttribute("aria-checked", String(id === mode));
+    tab.title = disabled ? loraReason : "";
+  });
+  modelInfo.textContent = MODELS[mode].info + (loraReady || mode !== "original" ? "" : `  (${loraReason})`);
+}
+
+/** En version Python, demande au serveur si l'expérience LoRA est prête (elle se charge en arrière-plan). */
+async function checkLora() {
+  if (IN_BROWSER) { renderModels(); return; }
+  try {
+    const info = await (await fetch(API_URL.replace("/generate", "/models"))).json();
+    loraReady = info.lora.available;
+    loraReason = info.lora.status === "loading" ? "The LoRA model is loading…" : info.lora.reason;
+    if (info.lora.status === "loading") setTimeout(checkLora, 3000);
+  } catch {
+    loraReason = "The LoRA experiment needs the local Python server.";
+  }
+  let saved = null;
+  try { saved = localStorage.getItem("rhyme-model"); } catch { /* idem */ }
+  selectModel(loraReady && saved ? saved : mode);
+}
+
 // --- La génération -----------------------------------------------------------------
+
+/** Un panneau par modèle : étiquette, comptine, mesures. */
+function makePanel(modelId) {
+  const panel = document.createElement("article");
+  panel.className = `poem-panel panel-${modelId}`;
+  const head = document.createElement("header");
+  head.className = "panel-head";
+  const tag = document.createElement("span");
+  tag.className = `tag tag-${modelId}`;
+  tag.textContent = MODELS[modelId].tag;
+  const name = document.createElement("span");
+  name.className = "panel-name";
+  name.textContent = MODELS[modelId].name;
+  head.append(tag, name);
+  const writing = document.createElement("div");
+  writing.className = "writing";
+  writing.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>'
+    + '<span class="writing-text">Writing your comptine…</span>';
+  const poem = document.createElement("div");
+  poem.className = "poem";
+  const meta = document.createElement("p");
+  meta.className = "meta";
+  panel.append(head, writing, poem, meta);
+  poemsEl.appendChild(panel);
+  return { writing, poem, meta };
+}
 
 async function generate(list) {
   lastWords = list;
+  const models = mode === "compare" ? ["original", "lora"] : [mode];
   resultEl.hidden = false;
-  writingEl.hidden = false;
-  poemEl.textContent = "";
-  metaEl.textContent = "";
+  poemsEl.textContent = "";
+  poemsEl.classList.toggle("compare", models.length > 1);
   againBtn.hidden = true;
   generateBtn.disabled = true;
+  const panels = models.map(makePanel);
   resultEl.scrollIntoView({ behavior: "smooth", block: "center" });
-  try {
-    showPoem(IN_BROWSER ? await writeInBrowser(list) : await writeOnServer(list));
-  } catch (err) {
-    metaEl.textContent = "";
-    const p = document.createElement("span");
-    p.className = "error";
-    p.textContent = `Oops, no comptine this time. ${err.message}`;
-    metaEl.appendChild(p);
-  } finally {
-    writingEl.hidden = true;
-    againBtn.hidden = false;
-    updateControls();
+  // L'une après l'autre : le serveur ne fait qu'une génération à la fois sur le GPU.
+  for (const [i, modelId] of models.entries()) {
+    const panel = panels[i];
+    try {
+      const data = IN_BROWSER ? await writeInBrowser(list) : await writeOnServer(list, modelId);
+      showPoem(panel, data);
+    } catch (err) {
+      const p = document.createElement("span");
+      p.className = "error";
+      p.textContent = `Oops, no comptine this time. ${err.message}`;
+      panel.meta.appendChild(p);
+    } finally {
+      panel.writing.hidden = true;
+    }
   }
+  againBtn.hidden = false;
+  updateControls();
 }
 
-function showPoem(data) {
+function showPoem(panel, data) {
   const colorOf = (w) => SLOT_COLORS[Math.max(0, words.indexOf(w))];
   const pattern = new RegExp(`\\b(${data.words.join("|")})\\b`, "gi");
   data.lines.forEach((line, i) => {
@@ -257,10 +347,10 @@ function showPoem(data) {
       last = m.index + m[0].length;
     }
     div.append(line.slice(last));
-    poemEl.appendChild(div);
+    panel.poem.appendChild(div);
   });
   const rhymes = Math.round(data.rhyme_rate * data.lines.length);
-  metaEl.textContent = `${data.found.length} of ${data.words.length} words used · `
+  panel.meta.textContent = `${data.found.length} of ${data.words.length} words used · `
     + `${rhymes} of ${data.lines.length} lines rhyme · written in ${data.seconds} s`;
 }
 
@@ -275,8 +365,13 @@ $("add-form").addEventListener("submit", (e) => {
 generateBtn.addEventListener("click", () => generate(filled()));
 againBtn.addEventListener("click", () => generate(lastWords || filled()));
 $("shuffle-btn").addEventListener("click", renderBubbles);
+document.querySelectorAll(".model-tab").forEach((tab) => {
+  tab.addEventListener("click", () => selectModel(tab.dataset.model));
+});
 
 splitTitle();
 renderSlots();
 renderBubbles();
+renderModels();
+checkLora();
 if (IN_BROWSER) startModel(); // le téléchargement commence pendant qu'on choisit ses mots

@@ -1,0 +1,1015 @@
+[
+  {
+    "prompt_keywords": [
+      "wonder",
+      "began"
+    ],
+    "reference": "When the little old woman first did wake,\nShe began to shiver and she began to shake;\nShe began to wonder and she began to cry,\n\"Lauk a mercy on me, this can't be I!",
+    "base": "There was a horse and bugger\nWhose name was John\nAnd he did all the work\nThen he went for a ride",
+    "style": "There was a man of the earth\nWho once was a sheep,\nPraised and praised he was poor,\nPoor, poor, poor.",
+    "keywords": "There was a man who was born\nIn a house built of gold,\nBut all his life the poor man\nHad begun to wonder.",
+    "base_360m": "S.T.R.E.E.S.",
+    "keywords_360m": "There was a man and his wife\nDid wonder at one another,\nPraying, \"If you will have our love,\nHow shall we begin to speak?\"",
+    "historique": "Where was a man with his little hand,\nAnd all his hand it was not allowed;\nHe'd never let it go,\nAnd he'd him with his hand."
+  },
+  {
+    "prompt_keywords": [
+      "wealthy",
+      "king",
+      "gift"
+    ],
+    "reference": "And being near his highness' heart,\nHe crav'd a wealthy boon,\nA liberal gift, the which the king\nCommanded to be done.",
+    "base": "a) 'Good King Wenceslas was poor,\nB) 'The King of England was poor,\nC) 'And King William was poor;\nD) 'And King Arthur was poor;",
+    "style": "Pray have you no wine,\nWater, or oil?\nHave you any bread?\nThere ain't none.",
+    "keywords": "Pray have you no gift,\nA royal gift?\nI had none, said the king,\nBut a rich one.",
+    "base_360m": "Pinkie Puffie,\nA.K.A. Pinkie Pie,\nWill you come to my party?\n(She is very nice,",
+    "keywords_360m": "Praying the King for a gift, says the Goose,\nAnd says I, \"Praying the King for a gift,\"\n\"Praying the King for a gift,\" says the King,\n\"Praying the King for a gift,\" says the Goose.",
+    "historique": "I met a kingbird,\nAnd all the queen said I know,\nAnd said I can go a bird,\nAnd you shall go with me,"
+  },
+  {
+    "prompt_keywords": [
+      "riddle",
+      "queen"
+    ],
+    "reference": "Purple, yellow, red, and green,\nThe king cannot reach it nor the queen;\nNor can old Noll, whose power's so great:\nTell me this riddle while I count eight.",
+    "base": "Queen, queen, what's your name?\nShe's a queen because she's the queen of the world,\nBut she has no queen's shoes.",
+    "style": "What was the name of this town?\nThe Town of Puck.",
+    "keywords": "What you will, I'll bid you,\nAnd I'll bid you,\nThat's the way the riddle lies,\nAnd I'll bid you.",
+    "base_360m": "Queen                                                            Queen",
+    "keywords_360m": "Queen, queen, what riddle shall I tell?\n\"I was in New York for a week,\nAnd went to my fair lady, my queen,\nTo see her there, &c.\"",
+    "historique": "\"Siddle, King, will I go with you?\"\n\"I, what can you do?\"\n\"I don't think you're,\nI'd just a little bit.\""
+  },
+  {
+    "prompt_keywords": [
+      "gruff",
+      "live",
+      "turn"
+    ],
+    "reference": "The gentleman answered gruff,\n\"If 't should turn out a maid or a mouse,\nFor of both we have more than enough,\nShe shan't stay to live in my house.\"",
+    "base": "rhyme\nrhyme\nrhyme\nrhyme",
+    "style": "\"There was a little duck,\" she said;\n\"What shall I do?\" she asked.\n\"I will go to the moon,\" he said;\n\"I will go to the water.\"",
+    "keywords": "\"There's a little girl,\" said the Gruff,\n\"Who lives in a heap of dung;\nShe can turn her head at any moment,\nAnd no man's the wiser.\"",
+    "base_360m": "1. gruff, live, turn\n2. gruff, live, turn\n3. gruff, live, turn\n4. gruff, live, turn",
+    "keywords_360m": "\"There's a little duck,\" quoth Gruffalo,\n\"That lived in the bog;\n\"In the bog, and in the bog,\nAnd in the bog;",
+    "historique": "Who shall do you be?\nI'm afraid,\nI'll sing a song;\nI'm not a-cake, said he'd."
+  },
+  {
+    "prompt_keywords": [
+      "beat",
+      "vex"
+    ],
+    "reference": "Give me a blow, and I'll beat 'em,\nWhy did they vex my baby?\nKissy, kiss, kissy, my honey,\nAnd cuddle your nurse, my deary.",
+    "base": "[A] A, B, C, A\n[B] A, B, C\n[C] A, B, C\n[D] A, B, C, D",
+    "style": "The little girl cried, and cried--\n\"Oh, my, my, my, my!\"",
+    "keywords": "The little girl was beating a drum--\nThe little girl was beating a drum--\nFor she had not the courage to beat a child,\nShe beat a woman with a stick.",
+    "base_360m": "[ANA]\n[PULI]\n[RU]\n[MU]",
+    "keywords_360m": "The fox walked through the hedge,\nThe crow laughed too well,\nThe rabbit beat the fox to the ground,\nAnd vexed his mother all the day.",
+    "historique": "\"Catch me a swan,\nBut let it be mine,\" said the Frog.\n\"I'll be successful though, I'll beat you.\"\n\"I'll be the master.\""
+  },
+  {
+    "prompt_keywords": [
+      "till",
+      "spray",
+      "grey"
+    ],
+    "reference": "She sat all day on the selfsame spray,\nFrom sunrise till sunset;\nAnd the dim grey light, it was all too bright\nFor the Owl to see in yet.",
+    "base": "I shall sing to you the song I will do\nIn the green and blue,\nIn the golden and scarlet,\nIf you will hear me.",
+    "style": "I shall have to go with the little dog,\nHe's a great hunter, and he'll get me some meat.",
+    "keywords": "I shall have to go to the barber's\nTo get some grey powder,\nTo let the spray off my head,\nWith a grey powder.",
+    "base_360m": "1. till\n2. rain\n3. grey\n4. spray",
+    "keywords_360m": "I shall sing to you the rain's\nTill the clouds are grey;\n\"What ails you, Jack Sprat?\"\nHe asks with a grin.",
+    "historique": "The wind was blowing, and the wind was blowing,\nWhat'll rain stop?\nWith a rowak of water."
+  },
+  {
+    "prompt_keywords": [
+      "queen",
+      "marry",
+      "make"
+    ],
+    "reference": "If I were a King,\nWhat would I do?\nI'd make you Queen,\nFor I'd marry you.",
+    "base": "The Little Red Hen\nThe Little Red Hen\nThe Little Red Hen\nThe Little Red Hen",
+    "style": "He will be the fool, I will be the fool:\nWho's the fool that is to be killed,\nAnd that the fool that gets the crown?\nHe will be the fool; he will be the fool; he will be the fool!",
+    "keywords": "The Queen and the King went to make one\nOf a great lady,\nAnd the King did marry her,\nAnd that was no wonder.",
+    "base_360m": "*The queen marries a soldier.",
+    "keywords_360m": "When will be married, said I,\nTo make a queen of you?\nThe king, says I, will be glad,\nFor I shall be the bride.",
+    "historique": "He will marry me a queen,\nAnd marry me a queen,\nAnd you all the Queen."
+  },
+  {
+    "prompt_keywords": [
+      "linendraper"
+    ],
+    "reference": "\"I am a linendraper bold,\nAs all the world doth know,\nAnd my good friend the calender\nWill lend his horse to go.\"",
+    "base": "a) In the English language, the word rhyme has a meaning.\n1. It means to fit together in a pleasing or satisfactory way.\n2. It means to sing or to rhyme with a certain sound.\n3. Sometimes rhymes are used to say the same thing as a word or a sentence.",
+    "style": "She went to the barn,\nShe went to the barn;\nShe went to the barn,\nAnd she could not find a cow.",
+    "keywords": "Linendraper's baby, Linendraper's baby,\nDance about your milk, dance about your milk,\nWhen the milk is gone from you, sing a song!\nDance about your milk, dance about your milk,",
+    "base_360m": "a) In an English classroom, a child is asked to draw the word \"basketball.\" The child draws a\nbasketball.\nb) In an English classroom, a child is asked to draw the word \"basketball.\" The child draws a\nball.",
+    "keywords_360m": "Linendraper's house, Linendraper's house.\nLinendraper's house, Linendraper's house.\nLinendraper's house, Linendraper's house.\nLinendraper's house, Linendraper's house.",
+    "historique": "She went to the stile's\nTo buy a shoe;\n\"Patch me a penny,\" said Puff, \"Twig, you'll,\nBut when I hope you can.\""
+  },
+  {
+    "prompt_keywords": [
+      "cunning"
+    ],
+    "reference": "His body being so slender small,\nThis cunning doctor took\nA fine perspective glass, with which\nHe did in secret look--",
+    "base": "cognate\ngorgeous\nvictory\nunfortunate",
+    "style": "The little man with his little white horse,\nLooks in the mirror at his beautiful face;\nHow good!\nHe turns away with a little smile,",
+    "keywords": "The little blackbird in the bush\nCrabbed a hole out of the ground,\nAnd then she flew about in a ball,\nTo see if she could be cunning.",
+    "base_360m": "crawler\ngauntlery\nmeadow\nclutter",
+    "keywords_360m": "The cock crow'd in the morn'\nThat made me cunning;\nFor I could not then but know\nThat he had been a fool.",
+    "historique": "Oh, my father did you see,\nThy his father, my son\nMy little boy:\nAnd I'll tell you my father very well,"
+  },
+  {
+    "prompt_keywords": [
+      "man",
+      "charles",
+      "black"
+    ],
+    "reference": "AS I was going by Charing Cross,\nI saw a black man upon a black horse;\nThey told me it was King Charles the First;\nOh, dear! my heart was ready to burst!",
+    "base": "This is a rhyme. The rhyme is about the first and the last words in our nursery rhyme,\n\"This is a poem, this is a poem.\"",
+    "style": "He went to a grocer's,\nAnd paid him five shillings:\nHe brought home a calf\nAnd thereupon he had a cup.",
+    "keywords": "He went to a grocer's,\nAnd he bought him a man;\nAnd he brought him into the\nA grocery-man's.",
+    "base_360m": "1. Man\n2. black\n3. man\n4. black",
+    "keywords_360m": "He went to a grocer's,\nAnd asked what he'd buy;\n\"A cow, a calf,\nA lamb, a sheep,",
+    "historique": "\"Went, man, old man, and his wife,\nAnd what shall we do do?\"\n\"I'm going to visit my wife!\""
+  },
+  {
+    "prompt_keywords": [
+      "wooing"
+    ],
+    "reference": "Where have you been to-day, Billy, my son?\nWhere have you been to-day, my only man!\nI've been a-wooing, mother; make my bed soon,\nFor I'm sick at heart, and fain would lay down.",
+    "base": "Rhyme with these words:",
+    "style": "Heard a mouse say, \"What a cold is this?\"\nShe kept the fire, and sent the letter;\nHeard a mouse say, \"Where do you come from?\"\nShe took the horn, and put it in the fire.",
+    "keywords": "She wooed me at the tower,\nAnd I wooed her by myself;\nShe wooed me to my heart's content,\nAnd I wooed her to my soul.",
+    "base_360m": "### 10. 7242.73545939",
+    "keywords_360m": "She wooed my love with her eyes,\nAnd she wooed him with her voice;\nShe wooed his love with the sweetest song\nThat ever she did sing.",
+    "historique": "Little Jack was a good boy,\nThe first boy said, \"You have been looking for,\nI just couldn't find my wife."
+  },
+  {
+    "prompt_keywords": [
+      "teacher",
+      "makes"
+    ],
+    "reference": "\"What makes the lamb love Mary so?\"\nThe eager children cry.\n\"Oh, Mary loves the lamb, you know.\"\nThe teacher did reply.",
+    "base": "-\n-\n-\n-",
+    "style": "The young woman came with a young man hee,\nAnd hee hee, and she hee,\nAnd then she wi'd her finger in her eye,\nAnd she wi'd her finger in her mouth.",
+    "keywords": "Oh, oh, what a lovely girl he was!\nHe was a pretty lad, and so he made the world,\nThe world was made for him, and he went to school,\nHe made the world go by himself.",
+    "base_360m": "Teacher",
+    "keywords_360m": "Oh, oh, O, oh, he makes a noise,\nAnd he makes a noise so loud,\nAnd he makes a noise so sweet,\nAnd he makes a noise so merry.",
+    "historique": "\"How does your teacher do be?\"\n\"A-aying is your teacher,\n\"Pray will 'ray be fair to the class.\""
+  },
+  {
+    "prompt_keywords": [
+      "bred",
+      "yes",
+      "ones"
+    ],
+    "reference": "\"Yes,\" said the little ones, and then\nShe went on to explain:\n\"A well-bred duck turns in its toes\nAs I do--try again.\"",
+    "base": "Rhyme:",
+    "style": "The witch did creep,\nThe witch did creep;\nAnd that was the end of the tale;\nAnd you can't tell that one.",
+    "keywords": "There once was a mother of six,\nAnd she bred her little boy so well;\nAnd when he grew up, he was a fool,\nAnd the little boy that was bred, he was none.",
+    "base_360m": "Rhyme:",
+    "keywords_360m": "There was an old woman of London,\nAnd she bred no children,\nBut she bred a cuckoo, and he said\nIt was all a lie.",
+    "historique": "Who shall we find them first?\n\"Here we go,\nI'll go to the mill,\" says the King.\n\"Okay, I'll find them there.\""
+  },
+  {
+    "prompt_keywords": [
+      "pray",
+      "wings",
+      "crow"
+    ],
+    "reference": "Oh, my pretty cock, oh, my handsome cock,\nI pray you, do not crow before day,\nAnd your comb shall be made of the very beaten gold,\nAnd your wings of the silver so gray.",
+    "base": "(1) \"Pray, crow, crow, crow, on a tree in the morning\"\n(2) \"Pray, crow, crow, crow, on the green lawn of the woods\"\n(3) \"Pray, crow, crow, crow, on a mountain-top\"\n(4) \"Pray, crow, crow, crow, on a green road\"",
+    "style": "Little Jack Horner went to a barber's shop,\nTo get a shave, and get a pair of shoes,\nAnd to get a pair of shoes and a pair of cowls,\nWhen he had got there, he found his wife a widow.",
+    "keywords": "Dance to the drum, or to the flageolet,\nAs the crowing of the cock,\nAnd let me take my wings, or let me give\nThe crows' crow.",
+    "base_360m": "(1) \"Pray, my child, for what you need.\"\n(2) \"I can pray if I want to.\"\n(3) \"I pray the Lord's prayer.\"\n(4) \"Pray for me.\"",
+    "keywords_360m": "In a little crow-parrot's nest\nA little crow-parrot lives;\nIn the cock-crowing-crow-parrot's nest\nHe has the wings to fly.",
+    "historique": "A robin, a gay,\nAnd she was a good-day,\nAnd she gave her a kiss;"
+  },
+  {
+    "prompt_keywords": [
+      "staid",
+      "flies"
+    ],
+    "reference": "I caught a little ladybird\nThat flies far away;\nI caught a little lady wife\nThat is both staid and gay.",
+    "base": "A, B, C, D, E, F, G, H, I, L, M, O, P, R, Q, S, T, W, Z.\nSt. George's Day\nSt. Andrew's Day\nSt. John of Patmos Day",
+    "style": "A penny, a penny, a dime,\nA penny, a penny, a half;\nA penny, a little pig,\nA penny, a pail, a pint,",
+    "keywords": "A staid house, and a gay street,\nAnd so many a fair lady gone,\nAnd so many a dirty lady gone,\nOh, what a staid house she had!",
+    "base_360m": "A staid man flies\nA staid man flies\nHe goes the road\nHe goes the road",
+    "keywords_360m": "A crow staid at the door, and said,\n\"I'll go to the baker's to-day,\nTo buy him some bread and to staid for me.\"\n\"Staid, staid, staid, staid,\" said the pigeon,",
+    "historique": "And I flew about the world,\nI barrow, if she ever got upon the stile\nBut'd all the flowers he flew."
+  },
+  {
+    "prompt_keywords": [
+      "horseback",
+      "ride"
+    ],
+    "reference": "\"My sister, and my sister's child,\nMyself, and children three,\nWill fill the chaise; so you must ride\nOn horseback after we.\"",
+    "base": "Sounds like:",
+    "style": "Sit on the ground and lie in the dust,\nAnd I will marry you and you and I;\nI'll marry you and you and I'll marry you,\nAnd then we'll have a little play.",
+    "keywords": "Sylvester, Sylvester, fly away,\nTo ride in the sun and rain,\nTo ride in the sun and snow,\nAnd ride in the moon and sky.",
+    "base_360m": "Sounds:",
+    "keywords_360m": "SIT on the horse's back,--\nHorses' tails are red,\nAnd I'll ride you to Broom-Hill,\nAnd up to the top!",
+    "historique": "When it was not very good at it,\nHe must ride his horse down the hill,\nAnd ride in."
+  },
+  {
+    "prompt_keywords": [
+      "cake",
+      "ale",
+      "girls"
+    ],
+    "reference": "Charley loves good cake and ale,\nCharley loves good candy,\nCharley loves to kiss the girls,\nWhen they are clean and handy.",
+    "base": "Cake, ale, girls\n(Ooo, ooh, ooh)",
+    "style": "Old man Peter and his wife were both\nSaddened, because they had been absent\nFor weeks together.\n\"Ah, my poor old man!",
+    "keywords": "There was a man, said he,\nWhich I liked best;\nHe did eat a cake of hay,\nAnd I said, \"Well done, lad.\"",
+    "base_360m": "Cake, ale, girls\n(You may choose to use a different rhyme.)\nRhyme:\nCake, ale, girls",
+    "keywords_360m": "A fine lady she was,\nA fine lady she was;\nShe had a pretty cake,\nAnd girls would dance before her.",
+    "historique": "The girls were in a basket,\nAnd the girls had none.\nAnd all the girls were very glad."
+  },
+  {
+    "prompt_keywords": [
+      "hope",
+      "dear"
+    ],
+    "reference": "His lady's again in the way,\nSo she said to her husband with joy,\n\"I hope some or other fine day,\nTo present you, my dear, with a boy.\"",
+    "base": "(a) Good Morning, sweetheart.\n(b) Love you.\n(c) Goodbye, my dear.\n(d) It's a warm day.",
+    "style": "The wind blew and the leaves blew,\nAnd when we went to the church the folks said\n\"Here's a nice little wind,\nAnd here's a nice little leaf, too!\"",
+    "keywords": "A little girl said to the little spider,\n\"O my dear little spider, how are you?\nI've lost my hat and I don't know what to do,\nWith a little heart and hope it would do.\"",
+    "base_360m": "(a) What do animals dream about?\n(b) Why are we still here?\n(c) Why do we wake up in the morning?\n(d) How do we remember to eat?",
+    "keywords_360m": "Dance a jig, ditty, dear,\nMy heart is made of gold and silver;\nMy hopes and hopes are in the sky,\nMy hopes and hopes are in the sea.",
+    "historique": "\"I love you well upon,\nAnd you'll be mine, and give you a good night\nAnd you love you for your master.\""
+  },
+  {
+    "prompt_keywords": [
+      "shot",
+      "town"
+    ],
+    "reference": "The farmer he loaded his pistol with lead,\nAnd shot the old rogue of a Fox through the head;\n\"Ah, ha!\" said the farmer, \"I think you're quite dead,\nAnd no more you'll trouble the town, heigho!\"",
+    "base": "The words in a rhyme are often repeated so frequently that it feels like a repetition of a group of words.\n• a, an, an, an\n• a, an, an, a, an\n• a (a, an)",
+    "style": "The bells rings, the bells bells,\nThe milkman comes out,\nHe'll find the pot of red sauce,\nHe'll find the pot of purple sauce.",
+    "keywords": "In the town shot a lion,\nIn the town shot a bull;\nIn the town shot a cat,\nIn the town shot a duck.",
+    "base_360m": "The town had a big, green town house.\nIt had a big, green town roof.\nIt had a big, green town garden.\nAnd a big, green town library.",
+    "keywords_360m": "The town-mouse shot the mouse-cat,\nAnd the mouse-cat shot the mouse-dog,\nAnd the dog-cat shot the cat-mouse,\nAnd the cat-mouse shot the cat.",
+    "historique": "The town is the town, or in town,\nAnd what's the town,\nWe'll go to the town and shoot our horn,\nI'm going to the town and shoot at the town."
+  },
+  {
+    "prompt_keywords": [
+      "thread"
+    ],
+    "reference": "Who'll make his shroud?\n\"I,\" said the beetle,\n\"With my thread and needle.\nI'll make his shroud.\"",
+    "base": "Mama, mamma, mamma, mamma.\nPapa, papa, papa, papa.\nBaker, baker, baker, baker.\nDo you want your milk?",
+    "style": "Old Master Peter, old Master Peter,\nWho ever was born in England,\nWas the first of all men to rise\nFrom his humble seat.",
+    "keywords": "SIR FROY: Now you are a very old man,\nAnd though I don't see much to do,\nI'll have your mother and your father to be my wives,\nAnd I'll marry to-morrow.",
+    "base_360m": "Mutualism:\nMutualism is a form of parasitism where two organisms benefit each other from the other. The organisms are of two different species. One is called the host while the other is called the parasite. Here is a sample of mutualism:\nThe butterfly has a flower to pollinate and in return a flower is given nectar.",
+    "keywords_360m": "When a cock crow'd,\nAnd a cock crow'd well,\nThen the cocks of the city\nWould dance on the moon.",
+    "historique": "For Miss Miss Miss Lily\nShe took her husband's threads and thread\nAnd sent her away and sent them to bed."
+  },
+  {
+    "prompt_keywords": [
+      "heaven",
+      "sky",
+      "fair"
+    ],
+    "reference": "If stars dropped out of heaven,\nAnd if flowers took their place,\nThe sky would still look very fair,\nAnd fair earth's face.",
+    "base": "haughty, faynd, fair, hoar, hame, fair, fair, fair, fair\nAnswer: “Hugh,” “Goodness!” “Faynd,” “Fair,” “Fair,” “Fair, fair, Fair, Fair”",
+    "style": "\"What shall we do?\"\n\"To find out a way,\nA way we can do.\"",
+    "keywords": "When the moon is a-shine,\nFair is my heaven;\nAnd when the heavens are fair,\nI'm as sure as you.",
+    "base_360m": "What's over the hill?\nWhat's under the tree?\nWhat's behind the house?\nWhat's in front of the house?",
+    "keywords_360m": "Hush, my pretty, my pretty;\nHush, my pretty, my pretty,\nI'm going up to heaven\nTo see the sky fair.",
+    "historique": "Jack and Mary all the sky,\nThey all flew up, down, down,\nAnd down and down they built."
+  },
+  {
+    "prompt_keywords": [
+      "woollen"
+    ],
+    "reference": "Little Jack Dandy-prat was my first suitor;\nHe had a dish and a spoon, and he'd some pewter;\nHe'd linen and woollen, and woollen and linen,\nA little pig in a string cost him five shilling.",
+    "base": "(1) Good wools are brown like a black bear's fur,\n(2) His coat is long like a whale's tail,\n(3) The hair on his head is white like a lily's bloom,\n(4) The black hair on his neck is like a lion's whiskers,",
+    "style": "\"I'L will not be so\nA queen, a dick, or a dame,\"\n\"But I will be a good man, a brave man, a mighty man,\nAnd all for the love of my God.",
+    "keywords": "The little dog had a white coat,\nPale and woolly;\nHe caught a cat which had lost its head,\nAnd he stuck to the ground.",
+    "base_360m": "(1867 words)",
+    "keywords_360m": "The tailor put on a sheepskin,\nAnd he spun wool for his wife;\nHe would not eat bread, nor cheese,\nNor milk of cows nor milk-pails.",
+    "historique": "But as I was not a sheep,\nAnd he'd a good child\nAnd nothing could tell;\nAnd then he would run in,"
+  },
+  {
+    "prompt_keywords": [
+      "sun",
+      "bring"
+    ],
+    "reference": "Give the sun time enough,\nGlowing and glowing,\nHe'll rouse the roses\nAnd bring them blowing.",
+    "base": "Rythm:\nDice Game:\nDice:\nRoll the Dice",
+    "style": "My little bird-songs\nCome of all the land;\nSing them to your mother's nest,\nWith my little bird.",
+    "keywords": "He brought the fire away,\nAnd put it out,\nAnd then he brought the sun\nTo make the birds sing.",
+    "base_360m": "Rhyming Words:",
+    "keywords_360m": "The sun shall warm and the moon\nShall shine upon the corn;\nThe corn shall grow and the vines shall bear,\nAnd all the flowers shall bloom.",
+    "historique": "Cockpinch-pinch the dog's tail,\nCinch got a little boy,\nCinchpinch, put himself in a bag,\nAnd let's go out and play."
+  },
+  {
+    "prompt_keywords": [
+      "snow",
+      "ground",
+      "grieves"
+    ],
+    "reference": "When the snow is on the ground,\nLittle Robin Red-breast grieves;\nFor no berries can be found,\nAnd on the trees there are no leaves.",
+    "base": "The snow falls\nFrom heaven\nAnd the grass grows\nLike a flower.",
+    "style": "This is the way it began.\nWhen I was a little boy,\nI went to a shop,\nTo buy a little gold plate.",
+    "keywords": "Hush, ho!\nWhat's the trouble?\nI'm glad you can't see\nAs I can hear.",
+    "base_360m": "The snow falls, the snow falls, the snow falls (snow-fall)\nThe ground is slippery, slippery, slippery (ground-slippery)\nGrieves, griefs, grieves, griefs, (griefs-grieved)",
+    "keywords_360m": "The snow-white cow and her calf\nBroke the ground to raise a mound;\n\"I grieves,\" said the cow, \"my calf\nHath taken to a new land.",
+    "historique": "\"Pray, can you give me some snow?\nI'll give you some snow and snow,\nTake the mammy's on,\nSo we kiss you, we will not get lost.\""
+  },
+  {
+    "prompt_keywords": [
+      "wren",
+      "john",
+      "says"
+    ],
+    "reference": "We'll shoot at a wren, says Richard to Robin,\nWe'll shoot at a wren, says Robin to Bobin,\nWe'll shoot at a wren, says John all alone,\nWe'll shoot at a wren, says every one.",
+    "base": "wreath\nwreathe\nwake\nwake",
+    "style": "Lady Pigeon, my lady,\nWith her hand\nUp to the sun,\nAnd her eye",
+    "keywords": "There was a wise man,\nHe said John Peter,\nIt was said by the wren,\nThey'll never see each other again.",
+    "base_360m": "wren\njohn",
+    "keywords_360m": "He says to me, \"I'll have no new shoes for you,\"\n\"But I'll have one for my daughter,\" quoth I;\nHe says, \"I'll have none for you,\" quoth I,\n\"But I'll have one for my wife.\"",
+    "historique": "\"I love my lady, sir,\" said John,\n\"My son I hope,\nAnd I'll do it well,\nAnd if I can't,\" said Peter,"
+  },
+  {
+    "prompt_keywords": [
+      "clerk",
+      "dead"
+    ],
+    "reference": "She went to the baker's to buy some bread;\nAnd when she came home her husband was dead.\nShe went to the clerk, to toll the great bell;\nAnd when she came back, her husband was well.",
+    "base": "(1) the nurse said that mother had broken the cold",
+    "style": "The cock that built it,\nCock that built it, cock that built it;\nThe cock that built it,\nThat I love to hear,",
+    "keywords": "There was a clerk,\nWho died,\nAnd all the day\nWas gone.",
+    "base_360m": "(3)",
+    "keywords_360m": "What shall he say to you?\n\"I'll tell you,\" says my clerk,\n\"I lost my money, and I died,\nAnd therefore I'm dead.\"",
+    "historique": "I've been to market, my clerk;\nAnd I've been to market,\nI got to buy me some leile,\nAnd I was not careful to fail."
+  },
+  {
+    "prompt_keywords": [
+      "night",
+      "brought",
+      "stand"
+    ],
+    "reference": "Now go to the stable, the night is so raw,\nGo, Dobbin, and rest your old bones on the straw;\nDon't stand any longer out here in the rain,\nFor you've brought papa home to his darling again.",
+    "base": "Night, when the stars are shining\nIn the dark and cold sky,\nIn the night, when the stars are shining\nThe children will sleep soundly.”",
+    "style": "I'm going to the river to wash,\nI'm going to the river to wash,\nI'm going to the river to wash,\nAnd my head is wet.",
+    "keywords": "When night comes a man and a woman\nAre bound together in a bed,\nAnd one falls asleep,\nAnd another awake.",
+    "base_360m": "```\nnight, brought, stand\n```",
+    "keywords_360m": "If I were a bride,\nI would go to bed\nWith my hair up in a cocked hat,\nAnd no care about the moon.",
+    "historique": "A cactus was a little pin,\nAnd that's a bit of the little cactus,\nAnd if you can, I will give it a little kiss a kiss,\nFor a pinch of silver pin from the cactus,"
+  },
+  {
+    "prompt_keywords": [
+      "doors",
+      "weave"
+    ],
+    "reference": "I can weave diaper thick, thick, thick,\nAnd I can weave diaper thin,\nI can weave diaper out of doors\nAnd I can weave diaper in.",
+    "base": "A door is a big green box that people put clothes in.\nI see a door open.\nIt is a door made of green cloth.\nIt has a green lid,",
+    "style": "The fox was a good cook,\nThe hen was a goodwife;\nWhen the cock crow'd,\nHe went down to the mill.",
+    "keywords": "\"I will weave a dress for you,\nMy lady, my lady, my lady;\n\"I will weave a dress for you,\nMy lady, my lady, my lady.\"",
+    "base_360m": "The door of the house was open,\nThe window in the house was wide open,\nThe birds were flying inside the house,\nThe door of the house was open,",
+    "keywords_360m": "This tune of an old man,\nThis tune of an old man;\nI weave it with my hands\nAnd set it as it is.",
+    "historique": "Pray is her mother's old,\nShe'll dress a tail,\nWhen she comes in, she tells her that she is old."
+  },
+  {
+    "prompt_keywords": [
+      "says",
+      "bobin"
+    ],
+    "reference": "We'll hire seven cooks, says Richard to Robin,\nWe'll hire seven cooks, says Robin to Bobin,\nWe'll hire seven cooks, says John all alone,\nWe'll hire seven cooks, says every one.",
+    "base": "-\n-\n-\n-",
+    "style": "The mice ate bread and butter,\nAnd all the mice did live;\nAnd the mice lived all alone,\nAnd all the mice done die.",
+    "keywords": "Two little girls up the hill,\nBobin-a-dowling goes;\nTwo little girls up the hill,\nTwo little girls up the hill.",
+    "base_360m": "```Say, Bobin' in the barn!\nSay, Bobin' in the barn!\nMy heart is full of good cheer,\nSay, Bobin' in the barn!",
+    "keywords_360m": "Bobin-doodle-dubbin,\nI'm a pretty little thing,\nI'll give you a bobin,\nIf you'll take a doll.",
+    "historique": "Pray of the old hen's\nGray tell\n\"Pray, dray, dray is there.\""
+  },
+  {
+    "prompt_keywords": [
+      "tell"
+    ],
+    "reference": "Riddle-me riddle-me riddle-me-ree,\nPerhaps you can tell what this riddle may be:\nAs deep as a house, as round as a cup,\nAnd all the king's horses can't draw it up.",
+    "base": "The three little kittens. (2)\nI came to see the king. (1)\nI came to see the king. (2)\nI saw the king in the window. (1)",
+    "style": "\"I did not know my father was dead,\nAnd I was so afraid for my father;\nI got up, and ran through the town,\nTo find out his body.",
+    "keywords": "Goosey, goosey, gander,\nI'll tell you all about it;\nGoosey, goosey, gander,\nI'll tell you all about your father:",
+    "base_360m": "The three little pigs. (2)",
+    "keywords_360m": "Taffy and taffy, taffy and taffy!\nTaffy's got a little house by the side of your road:\nTaffy's got a little house by the side of your road;\nTaffy, tell me where you live.",
+    "historique": "There was a little bear called Jack,\nHe was very naughty;\nHe was only what could he do."
+  },
+  {
+    "prompt_keywords": [
+      "body",
+      "cease",
+      "sickened"
+    ],
+    "reference": "Into his sickened body down,\nAnd therein saw that Death\nStood ready in his wasted frame\nTo cease his vital breath.",
+    "base": "* ** * * * * * * * * * * * * * * * *\n* * * * * * * * * * *\n* * * * * * * *\n* * * *",
+    "style": "How do you do, old woman, do?\nI've a pretty red head;\nI can't speak, I can't sing,\nBut I'll dance and I'll fool you.",
+    "keywords": "The body of a man sicken'd\nThee have said.\nBut so much the worse, the body\nOf a man sicken'd.",
+    "base_360m": "* 5.16.2012 08:40:48\n* 5.16.2012 07:41:49\n* 5.16.2012 06:42:52\n* 5.16.2012 04:47:03",
+    "keywords_360m": "Cessie went to bed,\nAnd all the day\nCessie was sickened\nBy the way he went.",
+    "historique": "There is a thief, and he'll go to the bathroom,\nThere's an old woman in a bag,\nAnd she finds a big coat, a coat, and a coat."
+  },
+  {
+    "prompt_keywords": [
+      "glad",
+      "whip"
+    ],
+    "reference": "Smack went the whip, round went the wheels,\nWere never folks so glad!\nThe stones did rattle underneath,\nAs if Cheapside were mad.",
+    "base": "lolly-roll-roll-roll-roll\nlolly-roll-roll-roll-roll-roll\nlolly-roll-roll-roll-roll-roll",
+    "style": "\"What a fine little pussy, I like her very much;\nI never saw a pussy before.\"\n\"Your house I will tell you, your house I cannot tell you,\nFor if you cannot tell me the way to the house,",
+    "keywords": "Gently, gently, tenderly,\nThe sweet, tender, glad, glad,\nMy bride-maid, woo you, woo, woo, woo,\nWith a golden whip.",
+    "base_360m": "glad (glahd) <–> whaps\nwhip (wip) <–> whaps",
+    "keywords_360m": "When the sweet young maid\nWent to the fair,\nShe took him to her bosom\nWith a pretty whip.",
+    "historique": "Jack's jolly, got in the horse,\nBut soon as he was jolly,\nAnd he came back\nHe ran away."
+  },
+  {
+    "prompt_keywords": [
+      "son",
+      "sleep"
+    ],
+    "reference": "Now go to sleep, my little son,\nOr I shall have to spank you;\nHow do you do? says uncle John--\nI'm pretty well, I thank you.",
+    "base": "- A word that sounds like the first part but has the second sound.\n- For example - red\n- To rhyme is to find a place where a word sounds like the first part and has the second sound.\n- A word that is not rhyming is like a word that does not sound like the first part but has the second sound.",
+    "style": "He went home to his father's\nTo marry his mother.",
+    "keywords": "Little Jack Horner\nWent to sleep,\nIn to bed,\nI'll see if he's still there.",
+    "base_360m": "1. 0 3. 7 9 11 15 16 19 23 25 27 28 32 34 35 36 37 39\nTables:\n1. 0\n2. 3",
+    "keywords_360m": "The cat got the better of her young-sire,\nHe was so sleepy all over,\nThat he never knew he was in the mire,\nAnd couldn't find his way back.",
+    "historique": "He'll play a-cake, a-cake,\nAnd he'll take a joger,\nSo he snor-c."
+  },
+  {
+    "prompt_keywords": [
+      "master"
+    ],
+    "reference": "EAT, birds, eat, and make no waste;\nI lie here and make no haste:\nIf my master chance to come,\nYou must fly, and I must run.",
+    "base": "- Riddle: A riddle is a word or phrase that has 5 or more syllables.\nThe rhyme goes like this:",
+    "style": "Who brought the dog to the church?\nThe lady that gave me a kiss.",
+    "keywords": "I was a little boy,\nAnd I was a little dog.\nI could not distinguish a dog,\nThe master was a cat.",
+    "base_360m": "1. a\n2. an\n3. and\n4. it",
+    "keywords_360m": "\"I will show you my master,\" said the Goose,\n\"And tell you his story,\" added the Goosewife.\nWith a crow-quill and a quill-quill-case,\nThe Goosewife made a little rhyme.",
+    "historique": "The mill is too heavy he cannot do,\nAnd the lady nor the mill that they can call;\nTo buy a master's horse,\nAnd to it will be very heavy."
+  },
+  {
+    "prompt_keywords": [
+      "nests"
+    ],
+    "reference": "But let the trees burst out in leaf,\nAnd nests be on the bough,\nWhich linnet is the luckier bird,\nOh who could doubt it now?",
+    "base": "The baby’s nose was very long and broad.\nThe baby’s nose was very long and broad.",
+    "style": "But the king of Flanders,\nWith a red-pawed dog,\nSaw the little dog leap\nUp in the air,",
+    "keywords": "And there she laid him,\nAnd she put him to sleep;\nAnd when it was all done,\nShe built a nest in the oak.",
+    "base_360m": "The nest that I made in the grass\nI found it in the morning\nI took it with me\nI put it in a box",
+    "keywords_360m": "Twas the night before Christmas,\nWhen all the nests were up;\nThen out came a little crow,\nAnd all the nests flew away.",
+    "historique": "If you will give me a-bird,\nIf you will not,\nI should not give my babybird,\nI'll give you some eggs,"
+  },
+  {
+    "prompt_keywords": [
+      "town",
+      "things",
+      "moonlight"
+    ],
+    "reference": "The fox jumped up on a moonlight night;\nThe stars they were shining, and all things bright;\nOh, ho! said the fox, it's a very fine night\nFor me to go through the town, e-ho!",
+    "base": "Bunny to Bunny\nWombat to\nWoman to Woman\nWanderer to",
+    "style": "The man that broke his fangs,\nThe boy that broke his throat,\nThe dog that bit his tail,\nThe cat that bit her tail,",
+    "keywords": "\"As much as I love the moon,\" said a little child\n\"You could put the moon in the town,\" said another;\n\"I'd like to go with you to the moonlight town,\"\n\"And what do you want?\" said the little one.",
+    "base_360m": "Bunny, Bunny\nWent out on\nThe moonlight\nTo get some",
+    "keywords_360m": "Three little mice were a-meeting,\nWhen they saw the moonlight shine,\nThey got into a town, that was lighted\nWith a little candle in a bottle.",
+    "historique": "\"I am not a man, I am a man,\nI will marry you and I will marry you.\"\n\"I will marry you a-horse,\nI will marry me.\""
+  },
+  {
+    "prompt_keywords": [
+      "grandmamma",
+      "brothers"
+    ],
+    "reference": "A peach for brothers, one for each,\nA peach for you and a peach for me;\nBut the biggest, rosiest, downiest peach\nFor Grandmamma with her tea.",
+    "base": "1.\n2.\n3.\n4.",
+    "style": "Here's a little pig and a little lamb;\nHere's a little pig and some carrots;\nHere's a little lamb and a little cow;\nThere's a little pig and some carrots and a little lamb.",
+    "keywords": "And in the meantime, we had a grandmamma,\nAnd we had a grandmamma, a grandmamma,\nAnd we had a grandmamma, a grandmamma, a grandmamma,\nAnd we had a grandmamma, a grandmamma, a grandmamma, a grandmamma.",
+    "base_360m": "1. Brothers are good friends.\n2. Brothers are brothers.\n3. Brothers are brothers.\n4. Brother is brother.",
+    "keywords_360m": "\"My grandmamma lives in the town,\" said Little Boy Red,\n\"I like to go out to-morrow, and we shall see the crow;\nAnd I hope I shall see the crow, if I can get a row-horse,\nFor Grandmamma lives in a small house, and no row-horse.\"",
+    "historique": "The father's daughter, and a brother\nWhen the little boy got to school,\nHe took out his mother's bag and they all sat down together."
+  },
+  {
+    "prompt_keywords": [
+      "hammer",
+      "smite"
+    ],
+    "reference": "Father Short came down the lane,\nOh! I'm obliged to hammer and smite\nFrom four in the morning till eight at night,\nFor a bad master, and a worse dame.",
+    "base": "a raining raven\ntampering with a key\nand it came to me\nThe raven came into a",
+    "style": "The King's daughter,\nPray, could she not be my wife?\nCan she be my wife?\nShe will be my wife.",
+    "keywords": "\"I'll smite a dog,\nLike a cat, I'll smite,\"--\n\"But a cat will not be,\" says the dog.",
+    "base_360m": "Bang bang.\nShake hands.\nShake hands.\nClang clang.",
+    "keywords_360m": "\"Here's a man to take the hammer,\" says the queen;\n\"And smite him down right in the middle of his back.\"",
+    "historique": "She took him to his mother's garden and showed him a hammer.\n\"It is my father's shed,\nPut it back to my mother.\""
+  },
+  {
+    "prompt_keywords": [
+      "charmer",
+      "declare"
+    ],
+    "reference": "My lord did again, the next day,\nDeclare to his mother his mind,\nThat he never more happy should be,\nUnless he his charmer should find.",
+    "base": "-A-\n-I-\n-S-\n-M-",
+    "style": "I have made a very good\nA cake;\nBut it is not for the rich\nTo eat,",
+    "keywords": "There was a little girl of seven,\nWho lived in a pretty little house;\nShe never made one penny,\nShe never made a penny.",
+    "base_360m": "```\nGood-by\nI\nam gone",
+    "keywords_360m": "The pretty little sparrow\nHappily flew back to the field;\nHe began to sing, and charmed the birds\nWith his pretty voice and sweet song.",
+    "historique": "A man of the maid was in the garden,\nAnd he did not like flowers,\nBut he still needed to answer."
+  },
+  {
+    "prompt_keywords": [
+      "let",
+      "free"
+    ],
+    "reference": "Merry have we met, and merry have we been,\nMerry let us part, and merry meet again;\nWith our merry sing-song, happy, gay, and free,\nAnd a merry ding-dong, happy let us be!",
+    "base": "I do _ love you_\nyou _are very clever_,\n_ you _ know the way to everything_.",
+    "style": "The apple in the basket,\nThe apple in the bag,\nThe apples in the tree,\nAnd the apples in the snow.",
+    "keywords": "Jack, Jack, do you know how to let the dogs out?\nThey'll get up at eight o'clock, and if you don't let them out\nYou'll have to carry them all out myself.\nLet the dogs out. Let the dogs out.",
+    "base_360m": "1. He gave a kiss,\n2. Kissed a kiss,\n3. Kissed a kiss,\n4. Kissed a kiss,",
+    "keywords_360m": "I'll let you have your liberty,\n\"Free as the wind,\" say they;\nI'll let you have your liberty,\n\"Free as the moon,\" they say.",
+    "historique": "Little cock-a-doo, my bee,\nBoea-a-a-a-a-bye,\nCatch me a fish,\nAnd we do not have to fall,"
+  },
+  {
+    "prompt_keywords": [
+      "half",
+      "begot",
+      "come"
+    ],
+    "reference": "But so unseen to go or come,--\nWhereas it pleas'd him still;\nBegot and born in half an hour,\nTo fit his father's will.",
+    "base": "• Sheep sheep sheep sheep sheep sheep sheep\n• The dove dove dove\n• I am the dove\n• We have the dove",
+    "style": "The mouse ran into the barn,\nAnd knocked the hay out of the wall;\nThe rat said, \"What a shame!\"\nAnd came back with the hay on his foot.",
+    "keywords": "He went to seek his half-brother,\nAnd he saw him come by,\nAnd he said, \"Ah! come here,\nAnd I'll give him half.\"",
+    "base_360m": "• half (1)\n• begot (1)\n• come (1)\n1. What rhymes with",
+    "keywords_360m": "There was a little dog,\nAnd he begot three children;\nOne was called John,\nAnd one was called Jack;",
+    "historique": "Little Robin shall have a penny,\nI'll sing my song and sheigho,\nTo sing my song, says she,\nCome a song and sing the song, and sing, I'll sing my song.\""
+  },
+  {
+    "prompt_keywords": [
+      "brought",
+      "nice",
+      "way"
+    ],
+    "reference": "OH! thank you, good Dobbin, you've been a long track,\nAnd have carried papa all the way on your back;\nYou shall have some nice oats, faithful Dobbin, indeed,\nFor you've brought papa home to his darling with speed.",
+    "base": "The Rook and the Rookie\nThe Rook and the Rookie\nThe Rook and the Rookie\nThe Rook and The Rookie",
+    "style": "She took her daughter's hair,\nThe king's daughter's head;\nThe king's daughter's head he took,\nAnd she took it back.",
+    "keywords": "I'll be bring'd a-talking,\nWith my lady, I say;\nAnd if any of you can sing a nice song,\nI'll be pleased to have it.",
+    "base_360m": "The teacher had a nice way to teach.",
+    "keywords_360m": "Here, nice way, and here, nice way,\nHere, nice way, and here, nice way;\nAnd it got me a beautiful coat,\nFor I was brought by a nice way.",
+    "historique": "\"Let's go a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-Cat, can you help me?\nWe'll make a card-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-Beth, shall we go with you?\"\n\"Of course, let's go!\" said the two-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a-a!\"\nWhen they got back to the fox's hand, they were so grateful to have a new friend."
+  },
+  {
+    "prompt_keywords": [
+      "time",
+      "tom",
+      "king"
+    ],
+    "reference": "The which he did, and for the same\nThe king his signet gave,\nWhich Tom about his middle wore,\nLong time a girdle brave.",
+    "base": "Hallelujah, Hallelujah!\nEternal, eternal, eternal, Eternal, Eternal!",
+    "style": "\"If you take a little milk,\" she began,\n\"And when you're done you'll put it into a pot,\nAnd that will make it last for you.\"",
+    "keywords": "And then, with a mighty king,\nHe flew from the land,\nAnd took his place upon the throne,\nAnd ruled the land for ever.",
+    "base_360m": "## What is 10% of 100000?",
+    "keywords_360m": "Tom was a rocking-horse,\nHe was a rocking-horse,\nHe took a journey to his Majesty,\nTo tell him how he lived.",
+    "historique": "I'll go to the king's chamber,\nI hope I can't wait to see them,\nBut if I can't tell them what good night I can."
+  },
+  {
+    "prompt_keywords": [
+      "sitting"
+    ],
+    "reference": "\"'T is close,\" said Dame Duck, shoving out\nThe egg-shells with her bill,\n\"Besides, it never suits young ducks\nTo keep them sitting still.\"",
+    "base": "Rhyme:",
+    "style": "John, John, where art thou going?\nThere's a cat there sitting by the fire.\nShe has a little girl of her own,\nAnd she says, \"Go to, John!\"",
+    "keywords": "TROY: \"Hush!\"\n\"My mother's dying.\"\n\"Oh, my, my,\" says my mother,\n\"It won't be long, I reckon.\"",
+    "base_360m": "```\n```",
+    "keywords_360m": "When my master came to sit,\nMy master got up very fast,\nAnd ran away on pain of death,\nAnd he that had his master's head.",
+    "historique": "Dast was a dussy-wow,\nI went to the market.\nTo market, to buy a gay-cake,\nThe clerk came back."
+  },
+  {
+    "prompt_keywords": [
+      "pitch"
+    ],
+    "reference": "Tiddle liddle lightum,\nPitch and tar;\nTiddle liddle lightum,\nWhat's that for?",
+    "base": "Cow and the Cat\nThe cow stood in the pasture,\nand her cat sat under the tree,\ncrying: ‘Why, dear, my little cat,",
+    "style": "He gave her the cock-crow,\nWhen he had got her out of the cornhole:",
+    "keywords": "There was a woman up in the wood\nWith a golden lamp,\nShe went to the inn and bought some ale,\nTo put her to bed.",
+    "base_360m": "Cow, cat, dog, goat, sheep, pig, rabbit, chicken, fox, bear, cat, dog, pig, goat, sheep, cow, duck, mouse, ant, butterfly, mouse, spider",
+    "keywords_360m": "\"Pray, what have you got?\" said the Goose-fellow;\n\"A little pea-shooter,\" answered the Cow-lady;\n\"And that I shall give to you, for I hate to lose\nIt, dear Mrs. Cow-lady, in the way of war.\"",
+    "historique": "This will this time you,\nIf this day, I will be the best,\nThat would be the best,\nAnd if you're left, I will."
+  },
+  {
+    "prompt_keywords": [
+      "dear",
+      "furnished",
+      "gilpin"
+    ],
+    "reference": "Quoth Mrs. Gilpin, \"That's well said;\nAnd for that wine is dear,\nWe will be furnished with our own,\nWhich is both bright and clear.\"",
+    "base": "Gilpin\nGilpins\nGilpin\nThegilpin",
+    "style": "\"I am the daughter of a tailor,\nAnd I will get a bit of silken cloth;\nI'll cut it out with my knife,\nAnd I'll give it to you as a present!\"",
+    "keywords": "Bid them gilp their gilt,\nAnd let them gilt their gilt;\nBid them gilp their gilt,\nAnd let them gilt their gilt.",
+    "base_360m": "Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin, Gilpin Gilpin!\nI love Gilpin Gilpin.\nI love Gilpin Gilpin.",
+    "keywords_360m": "There was a man of Willy-Pilly,\nAnd he called him Gilpin;\nAnd he went to furnish his house,\nWith a rowdy a penny!",
+    "historique": "PUS thou will make her happy;\nPray's a gay\nThe reason will make me a better sound."
+  },
+  {
+    "prompt_keywords": [
+      "straight"
+    ],
+    "reference": "\"Yes,\" said the Ducklings, waddling on.\n\"That's better,\" said their mother;\n\"But well-bred ducks walk in a row,\nStraight--one behind another.\"",
+    "base": "(a)\nThe cat and the mouse\nThe cat and the dog\nThe cat and the man",
+    "style": "The old man was a sailor,\nAnd he washed up on the water\nA-sailing with an arrow.",
+    "keywords": "Talking about the way one is\nDance round, or sit, and eat,\nAnd straight to the King's house let.\nWhat can be done in London?",
+    "base_360m": "(a)\nThe cat and the mouse\nThe cat and the mouse\n(b)",
+    "keywords_360m": "There was an old woman of the town,\nWho was very fond of her dog;\nShe always fed it on a string,\nAnd it stood always straight.",
+    "historique": "Little girl, why did she do?\n\"I think I can fly over my\nAnd I can!\" she said.\n\"If you'll fly over my wing.\""
+  },
+  {
+    "prompt_keywords": [
+      "tom",
+      "boys",
+      "ran"
+    ],
+    "reference": "Tom Brown's two little Indian boys,\nOne ran away,\nThe other wouldn't stay,--\nTom Brown's two little Indian boys.",
+    "base": "Maiden, maiden,\nDame, dame.\nGirls, girls,\nAll my brothers are girls.",
+    "style": "The old man's beard was white;\nHis face was as silver as silver.\nThe cock and the cock, the cow and the cow,\nThe cat and the cat, the dog and the dog,",
+    "keywords": "JOHN DINGLE, a boy who lived at Tommeny,\nAnd Tom Thumb, a boy in the same town,\nCouldn't get along any better than this;\nFor Tom Thumb had a great run, and John Dingle",
+    "base_360m": "Mmmm.\nTom\nRan.\nTom.",
+    "keywords_360m": "And Tom Thumb, and Tom Boy,\nAnd Tom Grub, and Tom-Tall-Tails,\nAnd Tom-Boys, and Tom-boys,\nAll the boys in the town.",
+    "historique": "Goer Tom, Tom,\nTom, run to mine,\nAt the market, Tom ran after Tom in the market,\nThat won't let's go home."
+  },
+  {
+    "prompt_keywords": [
+      "tried"
+    ],
+    "reference": "The concert it was fine;\nAnd every bird tried\nWho best should sing for Robin,\nAnd Jenny Wren the bride.",
+    "base": "• • •\n• • •\n• • •\n• • •",
+    "style": "There was an old man,\nWho always bought a penny;\nHe went to the market,\nAnd bought a penny,",
+    "keywords": "The dog and the cat had a fit\nAnd the little one had a fit;\nThe cat was in the pot, and the dog in the pan;\n\"Tried,\" said the little one, \"I didn't try.\"",
+    "base_360m": "Tried and Tried",
+    "keywords_360m": "Then I tried my hand, and I did not fail;\nI tried my hand, but I got no more.\nI tried my whole power, and I got no more,\nFor then I was as thin as a pin.",
+    "historique": "And all the little girls were all playing together,\nAnd all the little girls all got together in,\nAnd they all started to argue."
+  },
+  {
+    "prompt_keywords": [
+      "nod",
+      "mother",
+      "church"
+    ],
+    "reference": "Old Mother Niddity Nod swore by the pudding-bag,\nShe would go to Stoken Church fair;\nAnd then old Father Peter said he would meet her\nBefore she got half-way there.",
+    "base": "Nod and mother are cousins.\nMother and church are cousins.\nNod and church are cousins.\nMother and mother are cousins.",
+    "style": "The fox jumped over the bridge;\nThe mice jumped over the bridge,\nAnd the birds on the bridge\nSang a song of delight.",
+    "keywords": "When a mother's going to be married,\nWith a wedding-cake in her breast;\nWhen she walks to and fro,\nAnd nods its head to please her husband.",
+    "base_360m": "Nod a nod a nod\nMother a mother a mother\nChurch a church a church",
+    "keywords_360m": "The mother bird did go to church\nTo-day, to-morrow, and the next day,\nTo-morrow's to-day, to-morrow is nod,\nAnd the last day is to-morrow.",
+    "historique": "But when the storm came, the birds clinnle,\nAs the birds flew,\nThe children were singing, chinkle and dance,\nAnd the birds all clapped."
+  },
+  {
+    "prompt_keywords": [
+      "sell",
+      "eggs"
+    ],
+    "reference": "There was an old woman, as I've heard tell,\nShe went to market her eggs for to sell;\nShe went to market all on a market-day,\nAnd she fell asleep on the King's highway.",
+    "base": "In rhyme, the words rhymed together at the end of a line.\nRhyme= rhymes with the first or second line.\nA rhyme would be \"Jack and Jill\" with two rhymes in the middle.\nA rhyming couplet was a couple of long lines at the end of a stanza.",
+    "style": "The cat and the dog,\nThe dog and the cat,\nThe cat and the cat,\nThe dog and the dog,",
+    "keywords": "Penny, penny, what has this for a price?\nI'll buy you a dozen eggs, and you'll keep them.",
+    "base_360m": "In 1969, the Apollo 13 mission crew was lost in space.  They had to fly to the moon.  They would come back with a new vehicle with them, and they would return to Earth.  The crew was made of four people, two men and two women, and they had been trained for a week to fly with those two men, and they were good at it because they had been practicing for weeks.  Now, it",
+    "keywords_360m": "I'll buy you an egg, you may sell me a loaf,\nIf you like me, I'll sell you an egg;\nIf you do not like me, I'll sell you a loaf,\nIf you do not like that, then I'll sell you a cake.",
+    "historique": "When Tom was a little boy,\nHe bought honey;\nHe was very special and he bought a silver eggs."
+  },
+  {
+    "prompt_keywords": [
+      "ivy"
+    ],
+    "reference": "THE Brown Owl sits in the ivy-bush,\nAnd she looketh wondrous wise,\nWith a horny beak beneath her cowl,\nAnd a pair of large round eyes.",
+    "base": "There are two kinds of rhymes, those that rhyme and those that do not.",
+    "style": "CALL her in.\nCome, dear,\nAnd kiss her as you kiss'd one.",
+    "keywords": "There was a little cock,\nLittle cock, little cock--\nA cock that sat in a cuckoo\nUpon an Ivy bush.",
+    "base_360m": "Example:",
+    "keywords_360m": "Hickory Dickory Dock,\nThe Catched in the web,\nThe Crow, the Raven,\nAnd the Wolf are gone.",
+    "historique": "She took him some broth and put it on,\nAnd gave him some fine note;\nAs fine as she was about to go,\nHe cut the pan off his head,"
+  },
+  {
+    "prompt_keywords": [
+      "jig",
+      "loud",
+      "desire"
+    ],
+    "reference": "The cat sat asleep by the side of the fire,\nThe mistress snored loud as a pig,\nJack took up his fiddle by Jenny's desire,\nAnd struck up a bit of a jig.",
+    "base": "jig, jingle, jangle, jangled, jangled,\njingle, jangle, jangle\njingle, jangle, jangle\njingle, jangle, jangle",
+    "style": "If I could have you,\nIf I could have you,\nIf I could have you,\nI couldn't have you.",
+    "keywords": "\"What's the matter?\" said the pussy,\nWith a loud jig;\nShe called out, \"The dogs want to eat us,\nAnd my poor father's in a rage.\"",
+    "base_360m": "jig, jar-jer, jig-jig, jigg, jig, jig, jam",
+    "keywords_360m": "\"I want to be a jig, and I want to be a jig,\nI want to be a jig, and I want to be a jig,\nI want to be a jig, and I want to be a jig,\nI want to be a jig, and I want to be a jig.\"",
+    "historique": "If you be fair,\nI may not be fair,\nAll, if I do not say no harm,\nIf I say, I will be fair,"
+  },
+  {
+    "prompt_keywords": [
+      "shirt",
+      "oaken",
+      "limbs"
+    ],
+    "reference": "His hat made of an oaken leaf,\nHis shirt a spider's web,\nBoth light and soft for those his limbs\nThat were so smally bred.",
+    "base": "(1)\n(2)\n(3)\n(4)",
+    "style": "The old woman went a-waiting for him,\nShe saw him come out of the hall,\nWhat could we all do for a good man?\nShe said, \"Go in, and I will see him.\"",
+    "keywords": "\"Here's a shirt with a round head,\nAnd oaken limbs to show.\"\n\"Here's a shirt without a round head,\nAnd oaken limbs to show.\"",
+    "base_360m": "(1)\n(2)\n(3)\n(4)",
+    "keywords_360m": "Till the morning came, when the sun came up,\nThe bells began to ring, and the drum to sound,\nThe bells rang all over the town,\nTill the sun went down, when oaken limbs began to dance.",
+    "historique": "When I went to gather his mother's hat;\nHe came back with a row of eggs and his father carried away."
+  },
+  {
+    "prompt_keywords": [
+      "wedding",
+      "horn",
+      "blew"
+    ],
+    "reference": "The Cock then blew his horn,\nTo let the neighbours know\nThis was Robin's wedding-day,\nAnd they might see the show.",
+    "base": "Rory-ry\nRice-ry\nRice-ry\nRi-ry",
+    "style": "\"Little Man,\" said Little Man,\n\"I will not dance a step,\nBut will dance a step,\nAnd then I shall dance a step.\"",
+    "keywords": "There is an old lady and a young lady,\nAs they were going to a wedding\nWhen they heard a horn blow,\nThe young lady began to cry.",
+    "base_360m": "1. The bridegroom\n2. Blows the horn\n3. Blows the horn\n4. Blows the horn",
+    "keywords_360m": "Then wedding-ring he blew on his horn,\nAnd gave the poor maiden a kiss;\n\"I'm happy to see you, my pretty maid,\"\n\"I'm happy to see you, my pretty maid,\"",
+    "historique": "A diamond and a diamond\nA diamond is on the wall,\nBut a spoon and arrow it is on the wall!"
+  },
+  {
+    "prompt_keywords": [
+      "home",
+      "fetch",
+      "joan"
+    ],
+    "reference": "He carried it home to his old wife Joan,\nAnd bade her a fire to make, make, make.\nTo roast the little duck he had shot in the brook,\nAnd he'd go and fetch the drake, drake, drake.",
+    "base": "1.\n2.\n3.\n4.",
+    "style": "Pray, sirrah, what is your age?\nI am thirty years old.",
+    "keywords": "Catch a bird, catch a bird!\nHe has got a wife in the house,\nPretty Joan, she's got no home!\nShe don't have no home!",
+    "base_360m": "1. home",
+    "keywords_360m": "Joan, Joan, my bonny Joan,\nHome, by and bye;\nIf I see thee in the moon,\nThat shall be my bride.",
+    "historique": "The day, the dum said, \"I think I found you in a puddle,\nWhere you find you been?\"\nThe pan was in the puddle, and she said, \"I know where I know!\"\nThe puddle was in the puddle, and the puddle was dry."
+  },
+  {
+    "prompt_keywords": [
+      "pint",
+      "husband",
+      "bigger"
+    ],
+    "reference": "I had a little husband,\nNo bigger than my thumb;\nI put him in a pint pot,\nAnd then I bade him drum.",
+    "base": "a big house,\na big house,\nBig,\nBIG.",
+    "style": "The little boy and the little girl,\nWho went to live in the wood;\nThey met in the wood, and they met in the garden,\nAnd in the garden they fell in love.",
+    "keywords": "The wife was so big,\nThe little one so small,\nAnd the husband was so big,\nTill the pudding was so big.",
+    "base_360m": "1. A bit bigger than...\n2. the bigger\n3. a bit bigger\n4. a bit more",
+    "keywords_360m": "Walter Looby, Walter Looby,\nWho'd have lost his pint?\nIf he had lost his pint,\nHusband Looby would have died.",
+    "historique": "\"I love my lady, old woman, sir.\"\n\"I love your lady.\"\n\"I love you, old woman.\""
+  },
+  {
+    "prompt_keywords": [
+      "ran",
+      "fright"
+    ],
+    "reference": "Poor Cat Fright,\nRan off with all her might,\nBecause the dog was after her,\nPoor Cat Fright.",
+    "base": "The sun's red hot,\nThe moon is shining bright,\nWhile the stars are twinkling,\nIn the starry heaven.",
+    "style": "They all took to the sea,\nAnd there they lay,\nAnd all the time, and to-morrow,\nTo go again,",
+    "keywords": "\"I ran away, I ran away,\" said the dog;\n\"I ran away, I ran away,\" said the cat;\n\"I ran away, I ran away,\" he cried,\n\"I ran away, I ran away, I ran away.\"",
+    "base_360m": "The running boy flew out of the window as he was crying.",
+    "keywords_360m": "The fox frightened the cat,\nA little cat frightened the mouse;\nThe little mouse frightened the fox,\nWhich made the cat run mad.",
+    "historique": "The dog was very angry,\nIn the bade the cat was slars it;\nAnd the pig and the cat ran away."
+  },
+  {
+    "prompt_keywords": [
+      "lord",
+      "unseen",
+      "hid"
+    ],
+    "reference": "But not by my lord unseen,\nFor this time he followed too fast;\nAnd, hid in the forest green,\nSaw the strange things that past.",
+    "base": "-a\n-d\n-u\n-u",
+    "style": "There was an old man,\nAnd his wife,\nBoth dirty with mud and stinking,\nTill they got over",
+    "keywords": "\"Now, then, little man;\nThere's no hidden treasure\nIn this little cottage,\nBut if it were a woman,",
+    "base_360m": "1. লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্ধ লন্�",
+    "keywords_360m": "Then the king's son hid himself\nHe hid himself in a rock;\nHe hid himself in the ditch,\nAnd hid himself in a bank.",
+    "historique": "I saw a gay,\nI hid behind a bush,\nAnd hid behind a tree."
+  },
+  {
+    "prompt_keywords": [
+      "declared",
+      "blushed"
+    ],
+    "reference": "Jenny blushed behind her fan and thus declared her mind:\nSince, dearest Bob, I love you well, I take your offer kind;\nCherry-pie is very nice and so is currant wine,\nBut I must wear my plain brown gown and never go too fine.",
+    "base": "h'is'e'an'd\nd'r'on'e'a'an'd\nh'as'e'an'd",
+    "style": "The cat was a good cat\nFor the lady who she served;\nSo the lady came to see\nThe cat upon the lawn.",
+    "keywords": "A little blush is put on her cheek,\nAnd yet she could not blush;\nBut if she had a little blush to show,\nShe could not make it blush.",
+    "base_360m": "## Lesson 6:",
+    "keywords_360m": "Dance, my Lady, dance,\nWith your pretty lady;\nWith your pretty lady,\nYou shall blush again.",
+    "historique": "The dog's in the blushed;\nAnd all the blushed,\nAnd all the girls were all very happy."
+  },
+  {
+    "prompt_keywords": [
+      "come"
+    ],
+    "reference": "\"Madam, I am come to court you,\nIf your favour I can gain.\"\n\"Ah, Ah!\" said she, \"you are a bold fellow,\nIf I e'er see your face again!\"",
+    "base": "Come, come, come\nCome, come, come\nCome, come, come\nCome, come, come",
+    "style": "Cuckoo, woo, woo!\nWho's there?\nO, there's the cat,\nAnd the cat and the rat.",
+    "keywords": "There was a little pigeon,\nAnd she was always\nTo see the moon,\nAnd to come to me.",
+    "base_360m": "Come, Little Brown Bear.\nCome, Little Brown Bear.\nI have a little teddy bear.\nHe's a little boy.",
+    "keywords_360m": "Then when the bell rang,\nThe little folks all came in,\nThe little folks all in the same place,\nBut the little folks all to the same place.",
+    "historique": "A-bird, the first said,\nIf I be the best of?\nI was a little boy;\nI always had a little bit of money,"
+  },
+  {
+    "prompt_keywords": [
+      "danced",
+      "requesting"
+    ],
+    "reference": "'Twas once upon a time, when Jenny Wren was young,\nSo daintily she danced and so prettily she sung,\nRobin Redbreast lost his heart, for he was a gallant bird.\nSo he doffed his hat to Jenny Wren, requesting to be heard.",
+    "base": "A)",
+    "style": "The little lady of Bath\nWas a fair lady,\nBut not very graceful;\nShe had a little tail.",
+    "keywords": "\"Oh, what a long time I've been in bed,\nI've scarcely ever danced before,\nI've never asked the Queen for a penny,\nOr I would have danced my little brother.\"",
+    "base_360m": "A\nB\nC\nD",
+    "keywords_360m": "And when it was all that I dined,\nI danced for a penny,\nAnd when I had danced a penny,\nI got a pippin.",
+    "historique": "Little Tommy got a bow,\nWhen he could she left it,\nAnd all the geese were all in the basket."
+  },
+  {
+    "prompt_keywords": [
+      "bigger",
+      "child"
+    ],
+    "reference": "How in his heart he wish'd to have\nA child, in time to come,\nTo be his heir, though it might be\nNo bigger than his thumb.",
+    "base": "(2) Hiccup hiccuped; (3) Hiccup hiccuped,\n(4) Hiccup hiccuped,\n(5) No hiccup hiccuped; (6) No hiccup hiccuped,\n(7) Hiccup hiccuped,",
+    "style": "Jack knocked on a box,\nThe box was a hall;\nHe could not get in,\nBut went into the hall.",
+    "keywords": "He took her little lamb;\nHe took her little lamb,\nHe made her big, big, big, big;\nAnd she's a bigger lamb.",
+    "base_360m": "(2000 words)",
+    "keywords_360m": "Who can tell what she will do?\n\"I'll give you a cake, I'll give you a cake,\" quo'd he.\n\"You'll give me a bigger one,\" quo'd the boy;\n\"I must have the whole cake,\" quo'd the girl.",
+    "historique": "He was very small, and he always had him to keep him safe,\nHe always said, \"Get away poor man,\nAnd here I'll beat you away,\nWithout I'll never be alone.\""
+  },
+  {
+    "prompt_keywords": [
+      "bring",
+      "exercise"
+    ],
+    "reference": "\"Good lack!\" quoth he, \"yet bring it me,\nMy leathern belt likewise,\nIn which I bear my trusty sword\nWhen I do exercise.\"",
+    "base": "Rhyme",
+    "style": "Soldier, and Soldier,\nWhat do you want?\nTo kill me with your knife?\nWith my finger and finger all",
+    "keywords": "In the country of the birds,\nShe did bring them to my house.\nShe had a nice litter;\nAnd I was glad to see her.",
+    "base_360m": "The rabbit goes\nTo the field's green.",
+    "keywords_360m": "\"Come, say you have no exercises?\nAnd will you have none?\nTo exercise, to exercise,\nAnd to walk to-day.\"",
+    "historique": "\"Oh, ha-a-a-horse,\" said the farmer,\n\"Here I go to the meadow to be,\nThe farmer has gone to the meadow,\nAnd I'm going to feed that's not very long.\""
+  },
+  {
+    "prompt_keywords": [
+      "redbreast"
+    ],
+    "reference": "JENNY WREN fell sick,\nUpon a merry time;\nIn came Robin-Redbreast\nAnd brought her sops and wine.",
+    "base": "“Roo, coo, coo, coo, huggs I! huggs I, huggs I!”\nMocking:\n“Roo, coo, coo, coo, huggs I!”",
+    "style": "The old man went to his bed,\nAnd the old woman came to bed,\nAnd the old man says, \"Oh, my dog,\nYour dog has eaten too much pie.\"",
+    "keywords": "\"What do you think?\" said the redbreast,\n\"To be gay or to be white?\"\n\"To be gay, to be gay!\" said the redbreast,\n\"To be gay, to be gay!\"",
+    "base_360m": "10.",
+    "keywords_360m": "The redbreast sings in the morning,\nThe crow sings in the evening;\nThe nightingale sings at night,\nBut I will sing it once more.",
+    "historique": "\"Doth Dush, Donder,\nLittle Dussy, where are you going?\nI'll go to the stile;\nDance over a bush, and says Robin, \"I'll do not know, Diddle.\""
+  },
+  {
+    "prompt_keywords": [
+      "true",
+      "ear"
+    ],
+    "reference": "Each bottle had a curling ear,\nThrough which the belt he drew,\nAnd hung a bottle on each side,\nTo make his balance true.",
+    "base": "a-r-e-e-e-r-e-e-e-r-e-e-r\ne-r-e-e-r\nThis is a small, black book that was once in the\n_room and was in the child's hands, but I couldn't read_",
+    "style": "I did not know you, said the old woman\nI had a maid-servant;\nWhen he came to the door, the old woman\nStood still as a mouse.",
+    "keywords": "Now, so it must be,\nIf the dog be a dog\nThe dog must be a true one,\nFor the ear is true.",
+    "base_360m": "Instructions: Write a short nursery rhyme in English using the words shown above.\nRhyme:\nInstructions: Write a short nursery rhyme in English using the words shown above.\nRhyme:",
+    "keywords_360m": "Now, when you're at home,\nYou'd think you were a king,\n'Tis true, and you'd make me\nA great deal of money.",
+    "historique": "\"I have a little boy,\nWho'll not have a little boy?\nI've a little boy, and if you take care of me?\"\nHeigho."
+  },
+  {
+    "prompt_keywords": [
+      "loved"
+    ],
+    "reference": "Now Mistress Gilpin (careful soul!)\nHad two stone bottles found,\nTo hold the liquor that she loved,\nAnd keep it safe and sound.",
+    "base": "•    Pale moon, fair moon, pale moon, white sun\n•    Moon, moon, pale moon, moon\n•    Sweet moon, blue moon, pale moon, moon\n•    Golden moon, golden day, pale moon, day",
+    "style": "There came a little girl of seventeen,\nShe was so pretty and so well behaved;\nShe jumped over a hurdle;\nShe fell in a pond,",
+    "keywords": "If I were to tell you what I'm going to do,\nI'd begin at heart, then--and my mother is a good woman.\nI'd get out a pretty red silk jacket:\n\"If I could get it for you, my mother,\" said I, \"I'd gladly buy it.\"",
+    "base_360m": "1. The happy man is all alone.\n2. The unhappy man is all alone.\n3. The man who is all alone.\n4. The good man is all alone.",
+    "keywords_360m": "\"What,\" said she, \"are you?\"\nI said, \"Love and fond is mine.\"\n\"And what are your loves?\" added she;\n\"I love the sun and the moon.\"",
+    "historique": "What a silver coin and silver pebble,\nIf you are silver,\nOr if it will be silver and silver,\nIf you will still be a penny, you shall have a penny."
+  },
+  {
+    "prompt_keywords": [
+      "toll"
+    ],
+    "reference": "The tail grew on his back, sir, was six yards and an ell,\nAnd it was sent to Derby to toll the market bell,\nThe bell, the bell, the bell,\nAnd it was sent to Derby to toll the market bell.",
+    "base": "Rhyme:",
+    "style": "\"Pussy-Cat, you're in the town,\nAnd nobody can see you;\nI'll do my best to get you out;\nAnd I hope you'll never harm me.\"",
+    "keywords": "One, two, three, four, five, six, seven,\nFour, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, seventeen, eighteen, sixteen, twenty, twenty-two, twenty-three, twenty-four, twenty-five, twenty-six, twenty-seven, twenty-eight, twenty-nine, twenty, twenty-one, twenty-two, twenty-four, twenty-five, twenty-six, twenty-seven",
+    "base_360m": "toll.",
+    "keywords_360m": "The tolling of the bell\nHas all the world to hear;\nAnd each little town\nHas got its own toll.",
+    "historique": "The fox and the fox ran out of the meadow\nOn the way,\nThe fox was lost;\nThe fox said: \"I'll come back again soon.\""
+  },
+  {
+    "prompt_keywords": [
+      "thieves",
+      "woman",
+      "cried"
+    ],
+    "reference": "There was an old woman had nothing,\nAnd there came thieves to rob her;\nWhen she cried out she made no noise,\nBut all the country heard her.",
+    "base": "Tears\nCried\nChained\nHair",
+    "style": "The dog came to the house to get some food,\nBut the bell rang, and all the children were down,\nHe came right into the kitchen, and he'd get the cat to bite him,\nBut he won't, can't get the cat to bite him.",
+    "keywords": "\"The thief came after me,\nAnd stole away my mother;\nI cried, \"Hush, mother,\nHush, mother, my mother!\"",
+    "base_360m": "Tears\nCried\nWords:\nThieves",
+    "keywords_360m": "The woman cried, \"I'll have you, thieves,\nI'll have you, thieves, I'll have you!\"\nAnd out she came, and through the house\nShe tore and she tore, she did tear.",
+    "historique": "If the woman had to stay,\nAs I sat in the garden,\nBut when she came back\nAnd ran away."
+  },
+  {
+    "prompt_keywords": [
+      "girdle",
+      "necks",
+      "waist"
+    ],
+    "reference": "But still he seemed to carry weight,\nWith leathern girdle braced;\nFor all might see the bottle-necks\nStill dangling at his waist.",
+    "base": "Girdle",
+    "style": "When the birds were flying\nAbove the trees,\nThe mice were eating,\nAnd the rabbits were sleeping.",
+    "keywords": "\"You're a whinny-a-way,\nYou're a whinny-a-way,\nYou're a whinny-a-way,\nTill you have your necks.",
+    "base_360m": "Girdle around the waist\nTo keep us together\nIn times of trouble\nWe are all in a knot",
+    "keywords_360m": "\"What do you think?\"\n\"I'll show you with my waist,\"\n\"Girdle my waist!\"\n\"I'll show you with my neck,\"",
+    "historique": "\"What is your name?\"\n\"Bilt my name,\n\"A cuckoo,\" said the cuddle,\nAnd I do not like it.\""
+  },
+  {
+    "prompt_keywords": [
+      "accept",
+      "thee",
+      "keys"
+    ],
+    "reference": "Sir, I'll not accept of the keys of Canterbury,\nTo set all the bells ringing when we shall be merry;\nNeither will I walk abroad with thee,\nNeither will I talk with thee!",
+    "base": "There was a boy who knew no rhymes.\nThere was a boy who had a little one.\nThere was a boy who knew no rhymes.\nThere was a boy who had a little one.",
+    "style": "Butt to butt, and butt to butt,\nAnd she'll be as good as my wife.",
+    "keywords": "Pray, thou shalt not accept my keys,\nMy key is too small for thee;\nThere is no room for them in my purse,\nMy purse is too big for thee:",
+    "base_360m": "There was a young lady of Cambridge,\nWho was a great scholar and a bookworm.\nShe had a large library,\nAll filled with books and books and books,",
+    "keywords_360m": "Thou art a gentleman,\nOh, yes;\nThy father shall accept it,\nAnd thy mother shall also.",
+    "historique": "So he went to the fairy's\nTo buy him a broom.\nHe put his broom in the broom and pulled out a broom.\nIf he was brave enough, he would not do it again."
+  },
+  {
+    "prompt_keywords": [
+      "dainty",
+      "summons"
+    ],
+    "reference": "Cluck! cluck! the mother hen\nSummons her chickens\nTo peck the dainty bits\nFound in her pickings.",
+    "base": "saddened, dainty,\nsadly, merry,\nhappy, glad,\npleased,",
+    "style": "\"If she's not done,\" said Jack,\n\"Then, then, I'll be a man.\"",
+    "keywords": "Dainty little thing,\nAnd dainty little thing!\nWhen my master was summoned to supper,\nDainty little thing, dainty little thing!",
+    "base_360m": "Blog:",
+    "keywords_360m": "The master's daughter had a handsome nose,\nAnd her mother would not allow her to be made a servant.\nDainty, dainty and pretty,\nSummon'd to come at her mother's call.",
+    "historique": "Dance over, dotholety,\nAnd dor Robin's dame\nWith a daffy dorley, dickley, dorety,\nAnd dorley, Oety, dumpling, dumpling, dumpling, dorety, dumpling, dorny, dorenle."
+  },
+  {
+    "prompt_keywords": [
+      "cow",
+      "mother"
+    ],
+    "reference": "His father was a ploughman plain,\nHis mother milk'd the cow,\nYet how that they might have a son\nThey knew not what to do:",
+    "base": "- a cow, mother\n- a little girl\n- a mother, a cow\n- a little girl, a little cow",
+    "style": "Then, if we can\nHide our faces from the eyes\nOf the thief,\nWe'll put our heads on the table.",
+    "keywords": "The Queen of Cheese and the cow\nCows milk'd up the milk,\nAnd mother cow and her milk\nDrunk all the milk.",
+    "base_360m": "The mother cow gave birth to a calf.\nCow came out of her mother's\nher womb as it was born.\nRhyme:",
+    "keywords_360m": "Oh! my mother said to my mother,\n\"Cow, my cow, my cow,\nGive us some water; oh!\nMy mother said to my mother.",
+    "historique": "He went to the cow's mother,\nTo buy a cow.\n\"I'll buy a cow,\" she said.\nAnd the farmer looked at the cow,"
+  },
+  {
+    "prompt_keywords": [
+      "thanks",
+      "face",
+      "fell"
+    ],
+    "reference": "Then my lord brought his wife and child\nTo their home and parent's face,\nWho fell down and thanks returned\nTo God, for his mercy and grace.",
+    "base": "Fell, fell;\nAll fall, all befall;\nAll fall, fall.",
+    "style": "Little John, Little John,\nYou're as good as a king,\nFor you'll never be good to me\nIf you're a king.",
+    "keywords": "How many times has the dog fallen?\nWhy he gave me a good word;\nAnd how many times shall I fall?\nThat's all I can say.",
+    "base_360m": "Fell {saw}\nFace {seen}\n12 March 1998",
+    "keywords_360m": "When the moon was in her glory,\nShe gave a pretty rose;\nBut when the moon was in her fall,\nShe gave a pretty face.",
+    "historique": "Little George and his eyes were all over,\n\"Oh! I saw a fine little girl,\nHe put up his hat and downy head;\nHe pulled her head down, and off came back down."
+  },
+  {
+    "prompt_keywords": [
+      "grudge"
+    ],
+    "reference": "The city mouse eats bread and cheese;--\nThe garden mouse eats what he can;\nWe will not grudge him seeds and stalks,\nPoor little timid furry man.",
+    "base": "• I love to play\n• You have to play with me\n• I’ve never played with you before\n• I like to play with you",
+    "style": "Cock and Robin, cock and Robin,\nI will take you to my lady\nTo put you in a boat and bring you home.\nCock and Robin, cock and Robin,",
+    "keywords": "And the old man was never so mad\nAs he when he grudged his wife,\nAs sob'd up to the skies,\nAnd cried he'd never have a child.",
+    "base_360m": "• You can rhyme with\n- You can rhyme with",
+    "keywords_360m": "The grudge I took against him,\nBut it was no sin to bear;\nI'll give him a little sum,\nIf the grudge be not for hire.",
+    "historique": "The lady in the garden,\nAnd when she came back\nHe was hiding."
+  },
+  {
+    "prompt_keywords": [
+      "town",
+      "thy",
+      "fiddle"
+    ],
+    "reference": "\"John, come sell thy fiddle,\nAnd buy thy wife a gown.\"\n\"No, I'll not sell my fiddle,\nFor ne'er a wife in town.\"",
+    "base": "Your name!",
+    "style": "\"It's time the king should know\nThe king's a-coming.\"",
+    "keywords": "The town, the town, the town,\nOh, my little sweetheart!\nOh, my little sweetheart's at the piano\nTo play his little fiddle.",
+    "base_360m": "Thy fiddle-stick, thy fiddle-stick,\nA fiddlin' in thy house;\nThy fiddle-stick, thy fiddle-stick,\nA fiddlin' in thy house.",
+    "keywords_360m": "Cock-a-doodle-doo, etc.\nThy town, etc.\nCock-a-doodle-doo, etc.\nThe house of my lady, etc.",
+    "historique": "We'll go a-iddle,\nAll be a diddle, and then we'll go by a stream,\nAnd we'll go to the bridge."
+  },
+  {
+    "prompt_keywords": [
+      "maker"
+    ],
+    "reference": "Hey rub-a-dub, ho rub-a-dub, three maids in a tub,\nAnd who do you think was there?\nThe butcher, the baker, the candlestick-maker,\nAnd all of them gone to the fair.",
+    "base": "The cat sat on the cat.\nThe cat jumped off the cat.\nThe cat ran away.\nThe cat sat on the back of the cat.",
+    "style": "Old man John's wife made no answer,\nBut shook her head and said, \"Why, my poor man,\nWhat's the business of you making so little?\"",
+    "keywords": "The little boy came downstairs,\nAnd was found by the maids;\nHe took his wife by the hand,\nAnd they made him a nice wife.",
+    "base_360m": "1. Knead (knead) clay to make a bowl (bowl)\n2. Cook (cook) potatoes with milk (milk)\n3. Lick (lick) the spoon (spoon)\n4. Bake (bake) bread in the oven (oven)",
+    "keywords_360m": "Mary had a little lamb,\nIts fleece was white as snow;\nAnd everywhere that Mary went,\nThe lamb was sure to go.",
+    "historique": "Hush, mother, mother, I'll give you three waddle,\nAnd you'll say you, says Arthur,\nGo and get you a dame."
+  }
+]

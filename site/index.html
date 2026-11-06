@@ -37,6 +37,25 @@
     </header>
 
     <section class="card" aria-labelledby="words-label">
+      <div class="model-picker">
+        <h2 id="model-label" class="card-label">Your model</h2>
+        <div class="model-tabs" role="radiogroup" aria-labelledby="model-label">
+          <button type="button" class="model-tab" data-model="original" role="radio">
+            <span class="tag tag-original">Project</span>
+            <span class="model-name">Our GPT</span>
+          </button>
+          <button type="button" class="model-tab" data-model="lora" role="radio">
+            <span class="tag tag-lora">LoRA experiment</span>
+            <span class="model-name">SmolLM2 + LoRA</span>
+          </button>
+          <button type="button" class="model-tab" data-model="compare" role="radio">
+            <span class="tag tag-compare">Side by side</span>
+            <span class="model-name">Compare both</span>
+          </button>
+        </div>
+        <p class="model-info" id="model-info"></p>
+      </div>
+
       <h2 id="words-label" class="card-label">Your words</h2>
       <ul class="slots" id="slots" aria-live="polite"></ul>
 
@@ -59,12 +78,7 @@
     </section>
 
     <section class="result card" id="result" hidden aria-live="polite">
-      <div class="writing" id="writing" hidden>
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="writing-text">Writing your comptine…</span>
-      </div>
-      <div class="poem" id="poem"></div>
-      <p class="meta" id="meta"></p>
+      <div class="poems" id="poems"></div>
       <button class="btn btn-ghost" id="again-btn" hidden>Another one with the same words</button>
     </section>
   </main>

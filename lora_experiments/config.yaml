@@ -1,0 +1,51 @@
+# Configuration des expériences LoRA (The Little Rhyme Maker).
+# Tous les scripts de lora_experiments/ lisent ce fichier : rien n'est codé en dur ailleurs.
+
+seed: 1337
+
+model:
+  # Petit modèle de langue anglais pré-entraîné (architecture Llama, 135 M de paramètres).
+  # Variante plus grande : HuggingFaceTB/SmolLM2-360M.
+  name: HuggingFaceTB/SmolLM2-135M
+
+data:
+  # Le corpus du projet (notebook 01) : une comptine par bloc, séparées par une ligne vide.
+  sources:
+    - data/comptines_train.txt
+    - data/comptines_val.txt
+  out_dir: lora_experiments/data
+  val_share: 0.1            # part des groupes d'entraînement gardée pour la validation LoRA
+  keyword_sets_train: 2     # jeux de mots-clés différents par comptine d'entraînement (expérience 2)
+  max_keywords: 3
+  max_length: 192           # tokens, consigne comprise
+
+# Les deux expériences partagent tout, sauf les données et le format des exemples.
+lora:
+  r: 8                      # rang des matrices A et B
+  alpha: 16                 # facteur d'échelle : la correction vaut (alpha / r) · B · A · x
+  dropout: 0.05
+  # Couches ciblées : les projections de l'attention et du feed-forward des blocs Llama.
+  # train_lora.py vérifie qu'elles existent dans le modèle avant de configurer LoRA.
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+training:
+  learning_rate: 2.0e-4     # LoRA supporte un lr plus grand qu'un fine-tuning complet
+  scheduler: cosine
+  warmup_ratio: 0.05
+  weight_decay: 0.0
+  epochs: 3
+  batch_size: 8
+  gradient_accumulation: 2  # batch effectif = 16
+  eval_every: 50            # pas
+
+experiments:
+  style:
+    description: "Expérience 1 — adaptation au style : le poème seul, après un court en-tête"
+    prompt: "Nursery rhyme:\n"
+    poems: all              # toutes les comptines
+  keywords:
+    description: "Expérience 2 — génération conditionnée par les mots-clés"
+    # Pas de schéma de rimes imposé : seulement 10 % des comptines de 4 vers sont en AABB.
+    # Les rimes sont mesurées à l'évaluation, quel que soit leur schéma.
+    prompt: "Keywords: {keywords}\nInstruction: Write a short nursery rhyme in English using these words.\nRhyme:\n"
+    poems: four_lines       # seulement les comptines de 4 vers, la forme visée

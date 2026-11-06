@@ -1,0 +1,12 @@
+# Dépendances des expériences LoRA pour un environnement sans uv (Google Colab, pip).
+# PyTorch est déjà installé sur Colab ; en local, le projet utilise uv (uv sync).
+transformers>=5.22
+peft>=0.21
+datasets>=5.1
+accelerate>=1.15
+pyyaml>=6.0
+scikit-learn>=1.6
+tiktoken>=0.9
+matplotlib>=3.9
+pandas>=2.2
+tensorboard>=2.18

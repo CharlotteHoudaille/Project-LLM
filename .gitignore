@@ -36,3 +36,9 @@ desktop.ini
 
 # Ancien clone du dépôt, à supprimer
 Project LLM/
+
+# Expériences LoRA : datasets tokenisés (régénérés par prepare_data.py)
+lora_experiments/data/tokenized_*/
+lora_experiments/outputs/*/checkpoints/
+lora_experiments/outputs/*_smoke/
+lora_experiments/results/*_smoke*
